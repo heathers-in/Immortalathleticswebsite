@@ -1,5 +1,6 @@
 import { ImageWithFallback } from "../components/ImageWithFallback";
 import { GoogleReviewsPanel } from "../components/GoogleReviewsPanel";
+import { InstagramFeedSection } from "../components/InstagramFeedSection";
 import { ChevronDown } from "lucide-react";
 import { Accordion } from "../components/Accordion";
 import { useState, useEffect } from "react";
@@ -256,34 +257,7 @@ export function HomePage() {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-5xl mb-12 tracking-tight text-center">Follow Our Journey</h2>
 
-          <div className="bg-black border border-white/10 p-12 rounded-lg">
-            <div className="text-center text-white/60 mb-8">
-              <p className="text-lg">Instagram Feed</p>
-              <p className="text-sm">Embedded third-party widget will display here</p>
-            </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <ImageWithFallback
-                src="https://images.unsplash.com/photo-1714051037909-1e585c47da7b?w=400"
-                alt="Training moment"
-                className="w-full aspect-square object-cover"
-              />
-              <ImageWithFallback
-                src="https://images.unsplash.com/photo-1741478551865-da01fd4af0e4?w=400"
-                alt="Training moment"
-                className="w-full aspect-square object-cover"
-              />
-              <ImageWithFallback
-                src="https://images.unsplash.com/photo-1741478551868-a17b1644228d?w=400"
-                alt="Training moment"
-                className="w-full aspect-square object-cover"
-              />
-              <ImageWithFallback
-                src="https://images.unsplash.com/photo-1606657830879-00d70555b1b6?w=400"
-                alt="Training moment"
-                className="w-full aspect-square object-cover"
-              />
-            </div>
-          </div>
+          <InstagramFeedSection />
         </div>
       </section>
 
