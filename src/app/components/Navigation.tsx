@@ -60,19 +60,19 @@ export function Navigation() {
                 Youth
               </Link>
 
-              <a href="#contact" className="hover:text-white/70 transition-colors">
+              <Link to="/#contact" className="hover:text-white/70 transition-colors">
                 Contact
-              </a>
+              </Link>
             </div>
           </div>
 
           <div className="flex items-center gap-4">
-            <a
-              href="#contact"
+            <Link
+              to="/#contact"
               className="hidden sm:block bg-[#E74C3C] text-white px-6 py-3 hover:bg-[#C0392B] transition-colors uppercase tracking-wide text-sm"
             >
               Book a Taster Session
-            </a>
+            </Link>
 
             <button
               className="lg:hidden"
@@ -122,20 +122,20 @@ export function Navigation() {
               >
                 Youth
               </Link>
-              <a
-                href="#contact"
+              <Link
+                to="/#contact"
                 className="hover:text-white/70 transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Contact
-              </a>
-              <a
-                href="#contact"
+              </Link>
+              <Link
+                to="/#contact"
                 className="bg-[#E74C3C] text-white px-6 py-3 hover:bg-[#C0392B] transition-colors uppercase tracking-wide text-sm text-center mt-4"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Book a Taster Session
-              </a>
+              </Link>
             </div>
           </div>
         )}

@@ -1,7 +1,6 @@
-import { ImageWithFallback } from "../components/ImageWithFallback";
 import logomarkImg from "../../imports/Immortal_Logomark_1C.png";
 import youthPhoto from "../../imports/_A7_2924.jpg";
-import { Shield, Users, Trophy, Heart, Clock, PoundSterling } from "lucide-react";
+import { Shield, Users, Trophy, Heart, PoundSterling } from "lucide-react";
 
 export function YouthPage() {
   return (
@@ -43,37 +42,66 @@ export function YouthPage() {
                 </p>
               </div>
 
-              <div className="grid md:grid-cols-2 gap-8 items-start">
-                <div>
+              <div className="grid md:grid-cols-2 gap-8 items-stretch">
+                <div className="min-h-[18rem] md:min-h-0">
                   <img
                     src={youthPhoto}
                     alt="Coach Sai with young athlete"
-                    className="w-full h-full object-cover rounded-lg"
+                    className="h-full w-full min-h-[18rem] md:min-h-[min(32rem,70vh)] object-cover rounded-lg"
                   />
                 </div>
-                <div className="bg-zinc-950 border border-white/10 p-8 rounded-lg">
-                  <h3 className="text-2xl mb-6">Programme Highlights</h3>
-                  <div className="space-y-4">
-                    <div className="flex gap-4">
-                      <Users className="h-6 w-6 flex-shrink-0 mt-1 text-[#E74C3C]" />
-                      <div>
-                        <p className="text-white mb-1">Small Group Coaching</p>
-                        <p className="text-sm text-white/60">Max 8 athletes per session for individualised attention</p>
+                <div className="flex flex-col gap-8">
+                  <div className="bg-zinc-950 border border-white/10 p-8 rounded-lg">
+                    <h3 className="text-2xl mb-6">Programme Highlights</h3>
+                    <div className="space-y-4">
+                      <div className="flex gap-4">
+                        <Users className="h-6 w-6 flex-shrink-0 mt-1 text-[#E74C3C]" />
+                        <div>
+                          <p className="text-white mb-1">Small Group Coaching</p>
+                          <p className="text-sm text-white/60">Max 8 athletes per session for individualised attention</p>
+                        </div>
+                      </div>
+                      <div className="flex gap-4">
+                        <Trophy className="h-6 w-6 flex-shrink-0 mt-1 text-[#E74C3C]" />
+                        <div>
+                          <p className="text-white mb-1">Competition Pathway</p>
+                          <p className="text-sm text-white/60">Opportunities to compete at regional and national youth events</p>
+                        </div>
+                      </div>
+                      <div className="flex gap-4">
+                        <Heart className="h-6 w-6 flex-shrink-0 mt-1 text-[#E74C3C]" />
+                        <div>
+                          <p className="text-white mb-1">Supportive Environment</p>
+                          <p className="text-sm text-white/60">Positive, encouraging culture where every athlete belongs</p>
+                        </div>
                       </div>
                     </div>
-                    <div className="flex gap-4">
-                      <Trophy className="h-6 w-6 flex-shrink-0 mt-1 text-[#E74C3C]" />
-                      <div>
-                        <p className="text-white mb-1">Competition Pathway</p>
-                        <p className="text-sm text-white/60">Opportunities to compete at regional and national youth events</p>
-                      </div>
+                  </div>
+
+                  <div className="bg-zinc-950 border border-white/10 p-8 rounded-lg">
+                    <PoundSterling className="h-10 w-10 mb-4 text-[#E74C3C]" />
+                    <h3 className="text-2xl mb-6">Youth membership</h3>
+                    <div className="mb-6">
+                      <div className="text-5xl mb-2 text-[#E74C3C]">£90</div>
+                      <p className="text-white/70">Per month · ages 17 and under</p>
+                      <p className="text-white/60 text-sm mt-3">
+                        2× Immortal Athletics coached classes and 2× weightlifting platform open gym per week.
+                      </p>
                     </div>
-                    <div className="flex gap-4">
-                      <Heart className="h-6 w-6 flex-shrink-0 mt-1 text-[#E74C3C]" />
-                      <div>
-                        <p className="text-white mb-1">Supportive Environment</p>
-                        <p className="text-sm text-white/60">Positive, encouraging culture where every athlete belongs</p>
-                      </div>
+                    <ul className="space-y-3 text-white/70 mb-6">
+                      <li>• Personalised technique coaching</li>
+                      <li>• Progress tracking and goal-setting</li>
+                      <li>• Youth appropriate programming through TrainHeroic app</li>
+                      <li>• Competition coaching</li>
+                    </ul>
+                    <div className="pt-6 border-t border-white/10">
+                      <p className="text-sm text-white/60">
+                        This tier is arranged through the club (not on Kilo).{" "}
+                        <a href="/#contact" className="text-[#E74C3C] hover:underline">
+                          Contact us
+                        </a>{" "}
+                        to join or ask about options for younger athletes.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -109,54 +137,6 @@ export function YouthPage() {
                   <li>• Competition preparation and strategy</li>
                   <li>• Introduction to periodised programme design</li>
                 </ul>
-              </div>
-            </div>
-          </div>
-
-          {/* Schedule & Fees */}
-          <div className="mb-24 border-t border-[#E74C3C]/20 pt-24">
-            <h2 className="text-4xl mb-8 tracking-tight">Schedule & Fees</h2>
-            <div className="grid md:grid-cols-2 gap-12">
-              <div className="bg-zinc-950 border border-white/10 p-8 rounded-lg">
-                <Clock className="h-10 w-10 mb-4 text-[#E74C3C]" />
-                <h3 className="text-2xl mb-6">Youth Training Schedule</h3>
-                <div className="space-y-4">
-                  <div>
-                    <p className="text-xl mb-2">Weekday Sessions</p>
-                    <p className="text-white/70 mb-2">Monday · Tuesday · Thursday · Friday</p>
-                    <p className="text-[#E74C3C]">After school sessions available</p>
-                  </div>
-                  <div>
-                    <p className="text-xl mb-2">Sunday Sessions</p>
-                    <p className="text-[#E74C3C]">Morning session</p>
-                  </div>
-                  <div className="mt-6 pt-6 border-t border-white/10">
-                    <p className="text-white/70">
-                      Sessions are coached in small groups with a focus on technique, strength development, and athletic conditioning. Athletes can train multiple times per week based on their goals and experience level.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-zinc-950 border border-white/10 p-8 rounded-lg">
-                <PoundSterling className="h-10 w-10 mb-4 text-[#E74C3C]" />
-                <h3 className="text-2xl mb-6">Youth Membership</h3>
-                <div className="mb-6">
-                  <div className="text-5xl mb-2 text-[#E74C3C]">£60</div>
-                  <p className="text-white/70">per month, unlimited sessions</p>
-                </div>
-                <ul className="space-y-3 text-white/70 mb-6">
-                  <li>• Access to all youth sessions</li>
-                  <li>• Personalised technique coaching</li>
-                  <li>• Progress tracking and goal-setting</li>
-                  <li>• Discounts on youth competitions and workshops</li>
-                  <li>• Free British Weightlifting membership (first year)</li>
-                </ul>
-                <div className="pt-6 border-t border-white/10">
-                  <p className="text-sm text-white/60">
-                    Drop-in sessions: £12 per session (subject to availability)
-                  </p>
-                </div>
               </div>
             </div>
           </div>
@@ -231,7 +211,7 @@ export function YouthPage() {
           {/* Bottom CTA */}
           <div className="mt-16 text-center">
             <a
-              href="#contact"
+              href="/#contact"
               className="inline-block bg-[#E74C3C] text-white px-12 py-5 text-xl uppercase tracking-wide hover:bg-[#C0392B] transition-colors"
             >
               Book a Taster Session

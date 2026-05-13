@@ -155,7 +155,7 @@ export function PricesPage() {
               </p>
               <div className="text-center">
                 <a
-                  href="#contact"
+                  href="/#contact"
                   className="inline-block border border-white/30 text-white px-8 py-3 text-sm uppercase tracking-wide hover:border-[#E74C3C] hover:text-[#E74C3C] transition-colors"
                 >
                   Contact us for details
@@ -188,7 +188,7 @@ export function PricesPage() {
 
           <div className="text-center">
             <a
-              href="#contact"
+              href="/#contact"
               className="inline-block bg-[#E74C3C] text-white px-12 py-5 text-xl uppercase tracking-wide hover:bg-[#C0392B] transition-colors"
             >
               Book a Taster Session

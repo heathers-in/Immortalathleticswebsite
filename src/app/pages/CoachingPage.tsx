@@ -95,7 +95,7 @@ export function CoachingPage() {
               </div>
 
               <a
-                href="#contact"
+                href="/#contact"
                 className="block w-full text-center bg-[#E74C3C] text-white px-8 py-4 uppercase tracking-wide hover:bg-[#C0392B] transition-colors"
               >
                 Enquire About 1-2-1 Coaching
@@ -170,7 +170,7 @@ export function CoachingPage() {
               </div>
 
               <a
-                href="#contact"
+                href="/#contact"
                 className="block w-full text-center bg-[#E74C3C] text-white px-8 py-4 uppercase tracking-wide hover:bg-[#C0392B] transition-colors"
               >
                 Enquire About Online Coaching
@@ -185,7 +185,7 @@ export function CoachingPage() {
               Book a free consultation call to discuss your goals, experience level, and training needs. We'll help you choose the coaching approach that fits your lifestyle and ambitions.
             </p>
             <a
-              href="#contact"
+              href="/#contact"
               className="inline-block bg-[#E74C3C] text-white px-12 py-5 text-xl uppercase tracking-wide hover:bg-[#C0392B] transition-colors"
             >
               Book Free Consultation

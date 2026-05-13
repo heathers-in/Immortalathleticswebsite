@@ -35,7 +35,7 @@ export function SchedulePage() {
 
           <div className="text-center">
             <a
-              href="#contact"
+              href="/#contact"
               className="inline-block bg-[#E74C3C] text-white px-12 py-5 text-xl uppercase tracking-wide hover:bg-[#C0392B] transition-colors"
             >
               Book a Taster Session
