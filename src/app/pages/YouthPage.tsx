@@ -39,7 +39,7 @@ export function YouthPage() {
                   Olympic weightlifting is one of the best sports for developing explosive power, coordination, discipline, and confidence in young athletes. It's also a fantastic complement to other sports—many of our youth athletes come from rugby, football, athletics, and gymnastics backgrounds.
                 </p>
                 <p>
-                  Our youth sessions are coached by experienced, DBS-checked coaches who specialize in working with young people. We emphasize technique over load, progression over intensity, and always prioritize safety and enjoyment.
+                  Our youth sessions are coached by experienced, DBS-checked coaches who specialise in working with young people. We emphasise technique over load, progression over intensity, and always prioritise safety and enjoyment.
                 </p>
               </div>
 
@@ -58,7 +58,7 @@ export function YouthPage() {
                       <Users className="h-6 w-6 flex-shrink-0 mt-1 text-[#E74C3C]" />
                       <div>
                         <p className="text-white mb-1">Small Group Coaching</p>
-                        <p className="text-sm text-white/60">Max 8 athletes per session for individualized attention</p>
+                        <p className="text-sm text-white/60">Max 8 athletes per session for individualised attention</p>
                       </div>
                     </div>
                     <div className="flex gap-4">
@@ -101,13 +101,13 @@ export function YouthPage() {
               <div className="bg-zinc-950 border border-white/10 p-8 rounded-lg">
                 <h3 className="text-2xl mb-4">Ages 15-18 (Development)</h3>
                 <p className="text-white/70 mb-6">
-                  As athletes mature, we introduce more structured programming, progressive loading, and competition preparation. Athletes at this level may begin competing at British Weightlifting youth events.
+                  As athletes mature, we introduce a more structured programme, progressive loading, and competition preparation. Athletes at this level may begin competing at British Weightlifting youth events.
                 </p>
                 <ul className="space-y-2 text-white/70">
                   <li>• Advanced technique refinement</li>
                   <li>• Progressive strength training</li>
                   <li>• Competition preparation and strategy</li>
-                  <li>• Introduction to periodized programming</li>
+                  <li>• Introduction to periodised programme design</li>
                 </ul>
               </div>
             </div>
@@ -147,7 +147,7 @@ export function YouthPage() {
                 </div>
                 <ul className="space-y-3 text-white/70 mb-6">
                   <li>• Access to all youth sessions</li>
-                  <li>• Personalized technique coaching</li>
+                  <li>• Personalised technique coaching</li>
                   <li>• Progress tracking and goal-setting</li>
                   <li>• Discounts on youth competitions and workshops</li>
                   <li>• Free British Weightlifting membership (first year)</li>
@@ -189,7 +189,7 @@ export function YouthPage() {
                 <div>
                   <h3 className="text-2xl mb-4 text-white">Reporting Concerns</h3>
                   <p className="mb-4">
-                    If you have any concerns about the safety or welfare of a young athlete, or if you witness inappropriate behavior, please contact us immediately:
+                    If you have any concerns about the safety or welfare of a young athlete, or if you witness inappropriate behaviour, please contact us immediately:
                   </p>
                   <div className="bg-black border border-white/20 p-6 rounded">
                     <p className="mb-2"><strong>Safeguarding Officer: <span className="font-normal">Heather Sinclair</span></strong> </p>

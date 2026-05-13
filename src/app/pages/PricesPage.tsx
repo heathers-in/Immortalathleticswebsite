@@ -6,7 +6,7 @@ export function PricesPage() {
   const pricingFaqs = [
     {
       question: "Can I pay per session instead of a monthly membership?",
-      answer: "Yes, we offer drop-in rates for casual sessions. However, monthly memberships provide better value for regular attendees and include additional benefits like programming support."
+      answer: "Yes, we offer drop-in rates for casual sessions. However, monthly memberships provide better value for regular attendees and include additional benefits like programme support."
     },
     {
       question: "Is there a joining fee?",
@@ -22,7 +22,7 @@ export function PricesPage() {
     },
     {
       question: "What's included in the membership?",
-      answer: "All memberships include access to scheduled classes, open gym time, use of all equipment and platforms, online programming support, and discounts on workshops and seminars."
+      answer: "All memberships include access to scheduled classes, open gym time, use of all equipment and platforms, online programme support, and discounts on workshops and seminars."
     }
   ];
 
@@ -80,7 +80,7 @@ export function PricesPage() {
                 <ul className="space-y-3 text-white/70">
                   <li>• Unlimited class access</li>
                   <li>• Open gym privileges</li>
-                  <li>• Online programming</li>
+                  <li>• Online programme support</li>
                   <li>• Workshop discounts</li>
                 </ul>
               </div>

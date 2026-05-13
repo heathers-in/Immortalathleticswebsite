@@ -124,7 +124,7 @@ export function FacilitiesPage() {
                 <div>
                   <h3 className="text-2xl mb-3">Public Transport</h3>
                   <p className="text-white/80">
-                    The nearest bus stop is a 10-minute walk from the facility, or a 35 minute walk from Hatfield train station. There are convenient and safe cycling paths from Hatfield and Welwyn Garden City.
+                    The nearest bus stop is a 10-minute walk from the facility, or a 35-minute walk from Hatfield train station. There are convenient and safe cycling paths from Hatfield and Welwyn Garden City.
                   </p>
                 </div>
                 <div>

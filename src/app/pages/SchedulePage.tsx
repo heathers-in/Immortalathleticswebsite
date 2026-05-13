@@ -28,7 +28,7 @@ export function SchedulePage() {
 
           <div className="bg-zinc-900 border border-white/10 rounded-lg p-8 md:p-12 mb-12">
             <h2 className="text-2xl md:text-3xl tracking-tight text-center mb-8">
-              Class schedule
+              Class timetable
             </h2>
             <KiloScheduleWidget />
           </div>

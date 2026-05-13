@@ -23,7 +23,7 @@ export const FEATURED_GOOGLE_REVIEW_QUOTES: FeaturedGoogleReviewQuote[] = [
     author: "Layla",
     rating: 5,
     authorPhotoSrc: laylaPhoto,
-    text: "Sai is a fantastic coach who can somehow see what you're doing even when he is facing the opposite direction. He is patient, extremely knowledgable and has given me so much confidence in my lifting. Great gym, great people, excellent coach.",
+    text: "Sai is a fantastic coach who can somehow see what you're doing even when he is facing the opposite direction. He is patient, extremely knowledgeable and has given me so much confidence in my lifting. Great gym, great people, excellent coach.",
   },
   {
     author: "Dan",

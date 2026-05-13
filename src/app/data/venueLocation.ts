@@ -10,7 +10,7 @@ export const IMMORTAL_GOOGLE_MAPS_URL =
   "https://www.google.com/maps/place/Immortal+Athletics+Weightlifting+Club/@51.7796553,-0.2110275,17z/data=!3m1!4b1!4m6!3m5!1s0x48763be7f380d389:0xa345a93bff4569b3!8m2!3d51.7796553!4d-0.2110275!16s%2Fg%2F11n44x8cvh";
 
 /** Embed without Maps Embed API (no key). */
-export const IMMORTAL_MAP_EMBED_COORDS_SRC = `https://www.google.com/maps?q=${IMMORTAL_VENUE_LAT},${IMMORTAL_VENUE_LNG}&z=17&hl=en&output=embed`;
+export const IMMORTAL_MAP_EMBED_COORDS_SRC = `https://www.google.com/maps?q=${IMMORTAL_VENUE_LAT},${IMMORTAL_VENUE_LNG}&z=17&hl=en-GB&output=embed`;
 
 /**
  * Iframe `src` for the venue map.

@@ -17,7 +17,7 @@ export function CoachingPage() {
         </div>
         <div className="relative z-10 text-center">
           <h1 className="text-6xl tracking-tight mb-4">Coaching Services</h1>
-          <p className="text-xl text-white/80">Personalized training to elevate your performance</p>
+          <p className="text-xl text-white/80">Personalised training to elevate your performance</p>
         </div>
       </section>
 
@@ -26,7 +26,7 @@ export function CoachingPage() {
           <div className="mb-16 text-center max-w-3xl mx-auto">
             <img src={logomarkImg} alt="" className="h-12 w-auto mx-auto mb-6 opacity-60" />
             <p className="text-xl text-white/80 leading-relaxed">
-              Whether you prefer in-person attention or the flexibility of remote programming, Immortal Athletics offers elite coaching tailored to your goals, experience level, and schedule.
+              Whether you prefer in-person attention or the flexibility of remote programme delivery, Immortal Athletics offers elite coaching tailored to your goals, experience level, and schedule.
             </p>
           </div>
 
@@ -62,12 +62,12 @@ export function CoachingPage() {
               <div className="mb-8">
                 <User className="h-12 w-12 mb-4 text-[#E74C3C]" />
                 <h2 className="text-4xl mb-3 tracking-tight">1-2-1 Coaching</h2>
-                <p className="text-xl text-white/70">In-person, personalized attention</p>
+                <p className="text-xl text-white/70">In-person, personalised attention</p>
               </div>
 
               <div className="mb-8 space-y-4 text-white/80">
                 <p>
-                  One-to-one coaching provides the highest level of personalized attention, technical refinement, and accountability. Every session is tailored to your needs, with real-time feedback and hands-on coaching.
+                  One-to-one coaching provides the highest level of personalised attention, technical refinement, and accountability. Every session is tailored to your needs, with real-time feedback and hands-on coaching.
                 </p>
               </div>
 
@@ -85,7 +85,7 @@ export function CoachingPage() {
               <div className="mb-8">
                 <h3 className="text-2xl mb-4">What's Included</h3>
                 <ul className="space-y-2 text-white/70">
-                  <li>• Personalized session programming</li>
+                  <li>• Personalised session programme design</li>
                   <li>• Real-time technique coaching and video analysis</li>
                   <li>• Strength and mobility assessments</li>
                   <li>• Competition strategy and peak planning</li>
@@ -107,12 +107,12 @@ export function CoachingPage() {
               <div className="mb-8">
                 <Video className="h-12 w-12 mb-4 text-[#E74C3C]" />
                 <h2 className="text-4xl mb-3 tracking-tight">Online Coaching</h2>
-                <p className="text-xl text-white/70">Remote programming & support</p>
+                <p className="text-xl text-white/70">Remote programme & support</p>
               </div>
 
               <div className="mb-8 space-y-4 text-white/80">
                 <p>
-                  Online coaching gives you access to elite programming and expert guidance no matter where you train. Perfect for athletes who need flexibility but still want structured, progressive training with coach oversight.
+                  Online coaching gives you access to elite programme design and expert guidance no matter where you train. Perfect for athletes who need flexibility but still want structured, progressive training with coach oversight.
                 </p>
               </div>
 
@@ -129,8 +129,8 @@ export function CoachingPage() {
                   <div className="flex gap-4">
                     <Calendar className="h-6 w-6 flex-shrink-0 mt-1 text-white/70" />
                     <div>
-                      <p className="text-white mb-1">Custom Programming</p>
-                      <p className="text-sm text-white/60">Individualized training delivered weekly via app or spreadsheet</p>
+                      <p className="text-white mb-1">Custom programme</p>
+                      <p className="text-sm text-white/60">Individualised training delivered weekly via app or spreadsheet</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
@@ -151,7 +151,7 @@ export function CoachingPage() {
                     <Target className="h-6 w-6 flex-shrink-0 mt-1 text-white/70" />
                     <div>
                       <p className="text-white mb-1">Progress Tracking & Adjustments</p>
-                      <p className="text-sm text-white/60">Regular check-ins and program adjustments based on your progress</p>
+                      <p className="text-sm text-white/60">Regular check-ins and programme adjustments based on your progress</p>
                     </div>
                   </div>
                 </div>
@@ -160,9 +160,9 @@ export function CoachingPage() {
               <div className="mb-8">
                 <h3 className="text-2xl mb-4">What's Included</h3>
                 <ul className="space-y-2 text-white/70">
-                  <li>• Fully individualized programming (3-6 sessions/week)</li>
+                  <li>• Fully individualised programme design (3-6 sessions/week)</li>
                   <li>• Video review and technique feedback</li>
-                  <li>• Weekly check-ins and program adjustments</li>
+                  <li>• Weekly check-ins and programme adjustments</li>
                   <li>• Direct messaging with your coach</li>
                   <li>• Competition peaking and strategy planning</li>
                   <li>• Access to our online training community</li>

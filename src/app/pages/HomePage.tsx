@@ -49,11 +49,11 @@ export function HomePage() {
     },
     {
       question: "Is Olympic weightlifting safe?",
-      answer: "When performed with proper technique and appropriate coaching, Olympic weightlifting is very safe. Our experienced coaches prioritize movement quality and progressive loading to minimize injury risk."
+      answer: "When performed with proper technique and appropriate coaching, Olympic weightlifting is very safe. Our experienced coaches prioritise movement quality and progressive loading to minimise injury risk."
     },
     {
       question: "What age groups do you work with?",
-      answer: "We work with athletes from age 12 upward. We have specialized youth programming for ages 12-17, and adult classes for 18+. See our Youth page for more details on junior athletes."
+      answer: "We work with athletes from age 12 upward. We have a specialised youth programme for ages 12-17, and adult classes for 18+. See our Youth page for more details on junior athletes."
     }
   ];
 
@@ -105,7 +105,7 @@ export function HomePage() {
                   Founded on a passion for the "long game," we believe in building not just strength, but confidence, discipline, and a legacy that extends far beyond the barbell. We're a community-driven club with world-class coaching, rooted in the elite technical lineage of Turkish and Bulgarian weightlifting systems.
                 </p>
                 <p>
-                  Operating out of New Horizon CrossFit in Hertfordshire, we provide dedicated Olympic weightlifting platforms, expert programming, and a supportive environment where athletes can pursue excellence.
+                  Operating out of New Horizon CrossFit in Hertfordshire, we provide dedicated Olympic weightlifting platforms, expert programme design, and a supportive environment where athletes can pursue excellence.
                 </p>
               </div>
             </div>
@@ -204,7 +204,7 @@ export function HomePage() {
                 The <strong>Snatch</strong> is a single, continuous movement where the barbell is lifted from the ground to overhead in one fluid motion. The <strong>Clean & Jerk</strong> is a two-part lift: first pulling the bar to the shoulders (the Clean), then driving it overhead (the Jerk).
               </p>
               <p>
-                These lifts develop full-body strength, speed, coordination, and athleticism like no other training method. Olympic weightlifting is practiced by elite athletes worldwide and is a core component of strength and conditioning programs across many sports.
+                These lifts develop full-body strength, speed, coordination, and athleticism like no other training method. Olympic weightlifting is practised by elite athletes worldwide and is a core component of strength and conditioning programmes across many sports.
               </p>
             </div>
 

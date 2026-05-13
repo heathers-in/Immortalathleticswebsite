@@ -86,7 +86,7 @@ export function GoogleReviewsPanel() {
               <span className="text-white/80">
                 {data.rating.toFixed(1)}
                 {typeof data.userRatingCount === "number"
-                  ? ` · ${data.userRatingCount.toLocaleString()} ratings`
+                  ? ` · ${data.userRatingCount.toLocaleString("en-GB")} ratings`
                   : ""}
               </span>
             </div>
