@@ -17,5 +17,16 @@
   2. In Vercel → your project → **Environment Variables**, set `GOOGLE_PLACES_API_KEY` and either `GOOGLE_PLACE_ID` (recommended) or `GOOGLE_PLACES_TEXT_QUERY` (first search result is used).
   3. Redeploy. Locally, run `npm run dev:vercel` so `/api/*` is available alongside Vite, or set `VITE_REVIEWS_API_BASE` in `.env.local` to a preview deployment URL while using `npm run dev`.
 
+  ## Embedded venue map
+
+  The **Home** (Get in Touch) and **Facilities** (Location & Access) pages embed Google Maps for Immortal Athletics at New Horizon CrossFit, Hatfield. By default the iframe uses a coordinate-based embed (`output=embed`) and needs no API key.
+
+  Optionally, use the official [Maps Embed API](https://developers.google.com/maps/documentation/embed/get-started) with a **browser-safe** key (HTTP referrer restrictions only; not your server `GOOGLE_PLACES_API_KEY` unless you deliberately restrict it for embed + referrers). In `.env.local` or Vercel env, set:
+
+  - `VITE_GOOGLE_MAPS_EMBED_KEY` — Maps Embed API key  
+  - `VITE_GOOGLE_PLACE_ID` — same place id string as server `GOOGLE_PLACE_ID` (ChIJ…)
+
+  When both are set, the site uses `https://www.google.com/maps/embed/v1/place` instead of the coordinate fallback.
+
   Copy [.env.example](.env.example) to `.env.local` for reference (do not commit secrets).
   

@@ -1,4 +1,5 @@
 import { ImageWithFallback } from "../components/ImageWithFallback";
+import { GoogleVenueMap } from "../components/GoogleVenueMap";
 import { GoogleReviewsPanel } from "../components/GoogleReviewsPanel";
 import { InstagramFeedSection } from "../components/InstagramFeedSection";
 import { ChevronDown } from "lucide-react";
@@ -276,12 +277,8 @@ export function HomePage() {
 
           <div className="grid md:grid-cols-2 gap-12">
             <div>
-              <div className="bg-zinc-900 border border-white/10 p-8 rounded-lg h-96 flex items-center justify-center">
-                <div className="text-center text-white/60">
-                  <p className="text-lg mb-2">Google Map</p>
-                  <p className="text-sm">Embedded map will display here</p>
-                  <p className="text-sm mt-4">New Horizon CrossFit, Hatfield, UK</p>
-                </div>
+              <div className="rounded-lg border border-white/10 bg-zinc-900 p-4">
+                <GoogleVenueMap caption="New Horizon CrossFit, Hatfield, UK" />
               </div>
             </div>
 

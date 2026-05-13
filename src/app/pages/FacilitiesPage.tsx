@@ -1,5 +1,6 @@
 import { ImageWithFallback } from "../components/ImageWithFallback";
 import gymInsideImg from "../../imports/new_horizon_crossfit_gym_inside.png";
+import { GoogleVenueMap } from "../components/GoogleVenueMap";
 import logomarkImg from "../../imports/Immortal_Logomark_1C.png";
 
 export function FacilitiesPage() {
@@ -101,11 +102,8 @@ export function FacilitiesPage() {
             <h2 className="text-5xl mb-12 tracking-tight">Location & Access</h2>
             <div className="grid md:grid-cols-2 gap-12">
               <div>
-                <div className="bg-zinc-900 border border-white/10 rounded-lg h-96 flex items-center justify-center">
-                  <div className="text-center text-white/60">
-                    <p className="text-lg mb-2">Google Map</p>
-                    <p className="text-sm">Embedded map will display here</p>
-                  </div>
+                <div className="rounded-lg border border-white/10 bg-zinc-900 p-4">
+                  <GoogleVenueMap />
                 </div>
               </div>
               <div className="space-y-6">
