@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/((?!api/)(?!assets/)(?!src/)(?!@vite/)(?!@react-refresh)(?!@fs/)(?!@id/)(?!node_modules/).*)",
+      "destination": "/index.html"
+    }
+  ]
+}

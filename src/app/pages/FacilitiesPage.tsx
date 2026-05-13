@@ -34,11 +34,11 @@ export function FacilitiesPage() {
                   Our platforms feature:
                 </p>
                 <ul className="space-y-2 pl-6">
-                  <li>• Competition-standard Eleiko and Rogue barbells (20kg men's, 15kg women's)</li>
+                  <li>• Competition-standard barbells (20kg men's, 15kg women's)</li>
                   <li>• Full sets of calibrated competition bumper plates</li>
                   <li>• Professional lifting platforms with shock-absorbing surfaces</li>
                   <li>• Squat racks and jerk blocks for accessory work</li>
-                  <li>• Chalk, lifting straps, and essential accessories</li>
+                  <li>• Chalk and essential accessories</li>
                 </ul>
                 <p>
                   Whether you're hitting a new PR or drilling technique, our equipment meets the standards used in national and international competition.
@@ -77,10 +77,10 @@ export function FacilitiesPage() {
               </div>
               <div className="space-y-6 text-lg text-white/80 leading-relaxed">
                 <p>
-                  We're proud to operate out of <strong className="text-white">New Horizon CrossFit</strong> in Derbyshire—a spacious, purpose-built training facility with excellent amenities and a welcoming atmosphere.
+                  We're proud to operate out of <strong className="text-white">New Horizon CrossFit</strong> in Hertfordshire—a spacious, purpose-built training facility with excellent amenities and a welcoming atmosphere.
                 </p>
                 <p>
-                  The box features high ceilings, ample natural light, climate control, and a community-focused environment. While we share the space with CrossFit athletes, our dedicated Olympic weightlifting platforms ensure you have the equipment and space you need during scheduled sessions.
+                  The box features high ceilings, ample natural light, and a community-focused environment. While we share the space with CrossFit athletes, our dedicated Olympic weightlifting platforms ensure you have the equipment and space you need during scheduled sessions.
                 </p>
                 <p>
                   Facilities include:
@@ -90,61 +90,9 @@ export function FacilitiesPage() {
                   <li>• Ample free parking on-site</li>
                   <li>• Comfortable waiting area for spectators</li>
                   <li>• Kitchen facilities and water stations</li>
-                  <li>• Easy access from major Derbyshire routes</li>
+                  <li>• Easy access from major Hertfordshire routes</li>
                 </ul>
               </div>
-            </div>
-          </div>
-
-          {/* Photo Gallery */}
-          <div className="mb-24 border-t border-[#E74C3C]/20 pt-24">
-            <h2 className="text-5xl mb-12 tracking-tight">Photo Gallery</h2>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-              <ImageWithFallback
-                src="https://images.unsplash.com/photo-1741478551865-da01fd4af0e4?w=600"
-                alt="Athlete preparing to lift"
-                className="w-full aspect-[4/3] object-cover"
-              />
-              <ImageWithFallback
-                src="https://images.unsplash.com/photo-1741478551868-a17b1644228d?w=600"
-                alt="Deadlift training"
-                className="w-full aspect-[4/3] object-cover"
-              />
-              <ImageWithFallback
-                src="https://images.unsplash.com/photo-1714051037909-1e585c47da7b?w=600"
-                alt="Squat training"
-                className="w-full aspect-[4/3] object-cover"
-              />
-              <ImageWithFallback
-                src="https://images.unsplash.com/photo-1606657830879-00d70555b1b6?w=600"
-                alt="Barbell grip"
-                className="w-full aspect-[4/3] object-cover"
-              />
-              <ImageWithFallback
-                src="https://images.unsplash.com/photo-1674834727206-4bc272bfd8da?w=600"
-                alt="Gym equipment"
-                className="w-full aspect-[4/3] object-cover"
-              />
-              <ImageWithFallback
-                src="https://images.unsplash.com/photo-1521805492803-3b9c3792c278?w=600"
-                alt="Training session"
-                className="w-full aspect-[4/3] object-cover"
-              />
-              <ImageWithFallback
-                src="https://images.unsplash.com/photo-1741478551825-e7e5c77a2247?w=600"
-                alt="Equipment ready"
-                className="w-full aspect-[4/3] object-cover"
-              />
-              <ImageWithFallback
-                src="https://images.unsplash.com/photo-1535202666646-1a0a3884bc34?w=600"
-                alt="Lifting moment"
-                className="w-full aspect-[4/3] object-cover"
-              />
-              <ImageWithFallback
-                src="https://images.unsplash.com/photo-1741478551786-734ddc960779?w=600"
-                alt="Platform view"
-                className="w-full aspect-[4/3] object-cover"
-              />
             </div>
           </div>
 
@@ -165,9 +113,9 @@ export function FacilitiesPage() {
                   <h3 className="text-2xl mb-3">Address</h3>
                   <p className="text-white/80 text-lg">
                     New Horizon CrossFit<br />
-                    Derbyshire, UK<br />
-                    Postcode: DE## ###
-                  </p>
+                    Unit 3, Woodhall Farm<br />
+                    Hatfield AL9 5NU<br />
+                    </p>
                 </div>
                 <div>
                   <h3 className="text-2xl mb-3">Parking</h3>
@@ -178,7 +126,7 @@ export function FacilitiesPage() {
                 <div>
                   <h3 className="text-2xl mb-3">Public Transport</h3>
                   <p className="text-white/80">
-                    The nearest bus stop is a 10-minute walk from the facility. Contact us for detailed directions from your location.
+                    The nearest bus stop is a 10-minute walk from the facility, or a 35 minute walk from Hatfield train station. There are convenient and safe cycling paths from Hatfield and Welwyn Garden City.
                   </p>
                 </div>
                 <div>

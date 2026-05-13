@@ -22,19 +22,6 @@ export function YouthPage() {
         </div>
       </section>
 
-      {/* Safeguarding Banner */}
-      <section className="bg-[#E74C3C] text-white py-6">
-        <div className="max-w-7xl mx-auto px-4 flex items-center justify-center gap-4">
-          <Shield className="h-6 w-6" />
-          <p className="text-lg">
-            The safety and wellbeing of our young athletes is our top priority.{" "}
-            <a href="#safeguarding" className="underline hover:no-underline">
-              View our Safeguarding Policy
-            </a>
-          </p>
-        </div>
-      </section>
-
       <section className="py-24 px-4">
         <div className="max-w-7xl mx-auto">
           {/* Youth Programme Overview */}

@@ -30,9 +30,10 @@ export function Footer() {
           <div>
             <h3 className="uppercase tracking-wide mb-4">Opening Hours</h3>
             <div className="space-y-2 text-white/70">
-              <p>Monday - Friday: 6am - 9pm</p>
-              <p>Saturday: 8am - 6pm</p>
-              <p>Sunday: 9am - 4pm</p>
+              <p>Monday - Thursday: 6am - 8:30pm</p>
+              <p>Friday: 6am - 10:30am, 5:30pm-7:30pm</p>
+              <p>Saturday: 9am - 12pm</p>
+              <p>Sunday: 10:30am - 12:30pm</p>
             </div>
           </div>
 
@@ -51,10 +52,10 @@ export function Footer() {
             <h3 className="uppercase tracking-wide mb-4">Address</h3>
             <div className="text-white/70">
               <p>New Horizon CrossFit</p>
-              <p>Unit 2, The CowShed, Woodhall Farm</p>
+              <p>Unit 3, The CowShed, Woodhall Farm</p>
               <p>Hatfield AL9 5NU</p>
               <a
-                href="https://maps.google.com"
+                href="https://maps.app.goo.gl/GzvEdwAqmDTJPF3D7"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-block mt-2 underline hover:text-white transition-colors"
@@ -68,28 +69,20 @@ export function Footer() {
             <h3 className="uppercase tracking-wide mb-4">Follow Us</h3>
             <div className="flex gap-4">
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/immortalathletics/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-white/70 transition-colors"
               >
                 <Instagram className="h-6 w-6" />
               </a>
-              <a
-                href="https://facebook.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-white/70 transition-colors"
-              >
-                <Facebook className="h-6 w-6" />
-              </a>
             </div>
             <div className="mt-6 space-y-2 text-sm text-white/70">
               <a href="#privacy" className="block hover:text-white transition-colors">
                 Privacy Policy
               </a>
-              <a href="/youth#safeguarding" className="block hover:text-white transition-colors">
-                Safeguarding Policy
+              <a href="#terms" className="block hover:text-white transition-colors">
+                Terms and Conditions
               </a>
             </div>
           </div>

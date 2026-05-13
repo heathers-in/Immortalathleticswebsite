@@ -1,4 +1,5 @@
 import { ImageWithFallback } from "../components/ImageWithFallback";
+import { GoogleReviewsPanel } from "../components/GoogleReviewsPanel";
 import { ChevronDown } from "lucide-react";
 import { Accordion } from "../components/Accordion";
 import { useState, useEffect } from "react";
@@ -102,7 +103,7 @@ export function HomePage() {
                   Founded on a passion for the "long game," we believe in building not just strength, but confidence, discipline, and a legacy that extends far beyond the barbell. We're a community-driven club with world-class coaching, rooted in the elite technical lineage of Turkish and Bulgarian weightlifting systems.
                 </p>
                 <p>
-                  Operating out of New Horizon CrossFit in Derbyshire, we provide dedicated Olympic weightlifting platforms, expert programming, and a supportive environment where athletes can pursue excellence.
+                  Operating out of New Horizon CrossFit in Hertfordshire, we provide dedicated Olympic weightlifting platforms, expert programming, and a supportive environment where athletes can pursue excellence.
                 </p>
               </div>
             </div>
@@ -237,26 +238,7 @@ export function HomePage() {
         <div className="max-w-7xl mx-auto">
           <h2 className="text-5xl mb-12 tracking-tight text-center">What Our Athletes Say</h2>
 
-          <div className="bg-zinc-900 border border-white/10 p-12 rounded-lg mb-16">
-            <div className="text-center text-white/60 mb-4">
-              <p className="text-lg">Google Reviews widget placeholder</p>
-              <p className="text-sm">Embedded third-party widget will display here</p>
-            </div>
-            <div className="grid md:grid-cols-3 gap-8 mt-8">
-              <div className="border-l-4 border-[#E74C3C] pl-4">
-                <p className="mb-4 text-white/80">"The coaching at Immortal Athletics is world-class. Sai's attention to technique has transformed my lifts and kept me injury-free."</p>
-                <p className="text-sm text-white/60">— Sarah M.</p>
-              </div>
-              <div className="border-l-4 border-[#E74C3C] pl-4">
-                <p className="mb-4 text-white/80">"I walked in as a complete beginner and now I'm competing. The community here is incredibly supportive."</p>
-                <p className="text-sm text-white/60">— James T.</p>
-              </div>
-              <div className="border-l-4 border-[#E74C3C] pl-4">
-                <p className="mb-4 text-white/80">"Best decision I ever made. Not just stronger physically, but mentally too. This sport changes you."</p>
-                <p className="text-sm text-white/60">— Emma R.</p>
-              </div>
-            </div>
-          </div>
+          <GoogleReviewsPanel />
 
           <div className="text-center">
             <a
@@ -324,7 +306,7 @@ export function HomePage() {
                 <div className="text-center text-white/60">
                   <p className="text-lg mb-2">Google Map</p>
                   <p className="text-sm">Embedded map will display here</p>
-                  <p className="text-sm mt-4">New Horizon CrossFit, Derbyshire, UK</p>
+                  <p className="text-sm mt-4">New Horizon CrossFit, Hatfield, UK</p>
                 </div>
               </div>
             </div>
