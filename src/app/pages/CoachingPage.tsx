@@ -123,7 +123,7 @@ export function CoachingPage() {
                     <Clipboard className="h-6 w-6 flex-shrink-0 mt-1 text-white/70" />
                     <div>
                       <p className="text-white mb-1">Initial Assessment</p>
-                      <p className="text-sm text-white/75">Video analysis, movement screening, and goal-setting call</p>
+<p className="text-sm text-white/80">Video analysis, movement screening, and goal-setting call</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
