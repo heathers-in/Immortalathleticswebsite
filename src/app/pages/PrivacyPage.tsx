@@ -1,5 +1,6 @@
 import { Link } from "react-router";
 import { ImageWithFallback } from "../components/ImageWithFallback";
+import { PageHeroGradients } from "../components/PageHeroGradients";
 import logomarkImg from "../../imports/Immortal_Logomark_1C.png";
 
 const sections: { title: string; paragraphs: string[] }[] = [
@@ -62,20 +63,23 @@ export function PrivacyPage() {
 
   return (
     <div className="bg-black text-white">
-      <section className="relative h-[40vh] flex items-center justify-center">
-        <div className="absolute inset-0">
+      <section className="relative flex h-[40vh] items-center justify-center">
+        <div className="absolute inset-0 overflow-hidden">
           <ImageWithFallback
             src="https://images.unsplash.com/photo-1689514226730-c0fbca1345c9?w=1920"
             alt=""
             width={1920}
             height={1080}
             fetchPriority="high"
-            className="h-full w-full object-cover opacity-40"
+            className="h-full w-full object-cover"
           />
+          <PageHeroGradients />
         </div>
-        <div className="relative z-10 text-center px-4">
-          <h1 className="text-5xl md:text-6xl tracking-tight">Privacy Policy</h1>
-          <p className="mt-4 text-lg text-white/70 max-w-2xl mx-auto">
+        <div className="relative z-10 mx-auto max-w-2xl px-4 text-center">
+          <h1 className="text-5xl tracking-tight [text-shadow:0_1px_2px_rgb(0_0_0/0.9),0_8px_32px_rgb(0_0_0/0.55)] md:text-6xl">
+            Privacy Policy
+          </h1>
+          <p className="mt-4 text-lg text-white/90 [text-shadow:0_1px_2px_rgb(0_0_0/0.85),0_6px_24px_rgb(0_0_0/0.5)]">
             How we use personal data when you use immortalathletics.co.uk and related services.
           </p>
         </div>

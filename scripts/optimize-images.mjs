@@ -67,9 +67,10 @@ async function writePublicHero() {
     console.warn("skip public hero: could not read dimensions");
     return;
   }
-  const top = Math.round(H * 0.49);
+  /** Slightly lower crop start + tighter horizontal trim to reduce venue banner at edge of frame. */
+  const top = Math.round(H * 0.52);
   const cropH = H - top;
-  const insetX = Math.round(W * 0.06);
+  const insetX = Math.round(W * 0.08);
   const cropW = W - insetX * 2;
   const base = sharp(src)
     .rotate()

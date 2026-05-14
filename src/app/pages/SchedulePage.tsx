@@ -1,4 +1,5 @@
 import { ImageWithFallback } from "../components/ImageWithFallback";
+import { PageHeroGradients } from "../components/PageHeroGradients";
 import { KiloScheduleWidget } from "../components/KiloScheduleWidget";
 import logomarkImg from "../../imports/Immortal_Logomark_1C.png";
 
@@ -6,18 +7,21 @@ export function SchedulePage() {
   return (
     <div className="bg-black text-white">
       {/* Hero */}
-      <section className="relative h-[40vh] flex items-center justify-center">
-        <div className="absolute inset-0">
+      <section className="relative flex h-[40vh] items-center justify-center">
+        <div className="absolute inset-0 overflow-hidden">
           <ImageWithFallback
             src="https://images.unsplash.com/photo-1741478551825-e7e5c77a2247?w=1920"
             alt="Training schedule"
             width={1920}
             height={1080}
             fetchPriority="high"
-            className="h-full w-full object-cover opacity-40"
+            className="h-full w-full object-cover"
           />
+          <PageHeroGradients />
         </div>
-        <h1 className="relative z-10 text-6xl tracking-tight">Schedule</h1>
+        <h1 className="relative z-10 text-6xl tracking-tight [text-shadow:0_1px_2px_rgb(0_0_0/0.9),0_8px_32px_rgb(0_0_0/0.55)]">
+          Schedule
+        </h1>
       </section>
 
       <section className="py-24 px-4">

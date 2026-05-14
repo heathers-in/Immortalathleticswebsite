@@ -1,4 +1,5 @@
 import { ImageWithFallback } from "../components/ImageWithFallback";
+import { PageHeroGradients } from "../components/PageHeroGradients";
 import gymInsideImg from "../../imports/new_horizon_crossfit_gym_inside.jpg";
 import { GoogleVenueMap } from "../components/GoogleVenueMap";
 import logomarkImg from "../../imports/Immortal_Logomark_1C.png";
@@ -7,8 +8,8 @@ export function FacilitiesPage() {
   return (
     <div className="bg-black text-white">
       {/* Hero */}
-      <section className="relative h-[40vh] flex items-center justify-center">
-        <div className="absolute inset-0">
+      <section className="relative flex h-[40vh] items-center justify-center">
+        <div className="absolute inset-0 overflow-hidden">
           <img
             src={gymInsideImg}
             alt="New Horizon CrossFit facility"
@@ -16,10 +17,13 @@ export function FacilitiesPage() {
             height={960}
             fetchPriority="high"
             decoding="async"
-            className="h-full w-full object-cover opacity-50"
+            className="h-full w-full object-cover"
           />
+          <PageHeroGradients />
         </div>
-        <h1 className="relative z-10 text-6xl tracking-tight">Facilities</h1>
+        <h1 className="relative z-10 text-6xl tracking-tight [text-shadow:0_1px_2px_rgb(0_0_0/0.9),0_8px_32px_rgb(0_0_0/0.55)]">
+          Facilities
+        </h1>
       </section>
 
       <section className="py-24 px-4">

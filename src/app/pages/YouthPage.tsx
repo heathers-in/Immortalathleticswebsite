@@ -1,3 +1,4 @@
+import { PageHeroGradients } from "../components/PageHeroGradients";
 import logomarkImg from "../../imports/Immortal_Logomark_1C.png";
 import youthPhoto from "../../imports/_A7_2924.jpg";
 import { Shield, Users, Trophy, Heart, PoundSterling } from "lucide-react";
@@ -6,8 +7,8 @@ export function YouthPage() {
   return (
     <div className="bg-black text-white">
       {/* Hero */}
-      <section className="relative h-[40vh] flex items-center justify-center">
-        <div className="absolute inset-0">
+      <section className="relative flex h-[40vh] items-center justify-center">
+        <div className="absolute inset-0 overflow-hidden">
           <img
             src={youthPhoto}
             alt="Youth athlete training with coach"
@@ -15,13 +16,17 @@ export function YouthPage() {
             height={2880}
             fetchPriority="high"
             decoding="async"
-            className="h-full w-full object-cover opacity-50"
+            className="h-full w-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black" />
+          <PageHeroGradients />
         </div>
-        <div className="relative z-10 text-center">
-          <h1 className="text-6xl tracking-tight mb-4">Youth Programme</h1>
-          <p className="text-xl text-white/80">Building strong, confident young athletes</p>
+        <div className="relative z-10 px-4 text-center">
+          <h1 className="mb-4 text-6xl tracking-tight [text-shadow:0_1px_2px_rgb(0_0_0/0.9),0_8px_32px_rgb(0_0_0/0.55)]">
+            Youth Programme
+          </h1>
+          <p className="text-xl text-white/90 [text-shadow:0_1px_2px_rgb(0_0_0/0.85),0_6px_24px_rgb(0_0_0/0.5)]">
+            Building strong, confident young athletes
+          </p>
         </div>
       </section>
 

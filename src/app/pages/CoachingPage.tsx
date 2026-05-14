@@ -1,4 +1,5 @@
 import { ImageWithFallback } from "../components/ImageWithFallback";
+import { PageHeroGradients } from "../components/PageHeroGradients";
 import coachSaiImg from "../../imports/new_horizon_crossfit_coach_sai_asghari.jpg";
 import logomarkImg from "../../imports/Immortal_Logomark_1C.png";
 import { User, Calendar, Target, Clipboard, Video, MessageSquare } from "lucide-react";
@@ -7,20 +8,25 @@ export function CoachingPage() {
   return (
     <div className="bg-black text-white">
       {/* Hero */}
-      <section className="relative h-[40vh] flex items-center justify-center">
-        <div className="absolute inset-0">
+      <section className="relative flex h-[40vh] items-center justify-center">
+        <div className="absolute inset-0 overflow-hidden">
           <ImageWithFallback
             src="https://images.unsplash.com/photo-1535202666646-1a0a3884bc34?w=1920"
             alt="Coaching session"
             width={1920}
             height={1080}
             fetchPriority="high"
-            className="h-full w-full object-cover opacity-40"
+            className="h-full w-full object-cover"
           />
+          <PageHeroGradients />
         </div>
-        <div className="relative z-10 text-center">
-          <h1 className="text-6xl tracking-tight mb-4">Coaching Services</h1>
-          <p className="text-xl text-white/80">Personalised training to elevate your performance</p>
+        <div className="relative z-10 px-4 text-center">
+          <h1 className="mb-4 text-6xl tracking-tight [text-shadow:0_1px_2px_rgb(0_0_0/0.9),0_8px_32px_rgb(0_0_0/0.55)]">
+            Coaching Services
+          </h1>
+          <p className="text-xl text-white/90 [text-shadow:0_1px_2px_rgb(0_0_0/0.85),0_6px_24px_rgb(0_0_0/0.5)]">
+            Personalised training to elevate your performance
+          </p>
         </div>
       </section>
 

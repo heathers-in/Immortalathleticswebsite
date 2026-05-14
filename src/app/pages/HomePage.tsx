@@ -1,5 +1,6 @@
 import { ChevronDown } from "lucide-react";
 import { Accordion } from "../components/Accordion";
+import { PageHeroGradients } from "../components/PageHeroGradients";
 import { lazy, Suspense, useEffect, useState } from "react";
 import coachSaiImg from "../../imports/new_horizon_crossfit_coach_sai_asghari.jpg";
 import logomarkImg from "../../imports/Immortal_Logomark_1C.png";
@@ -116,7 +117,7 @@ export function HomePage() {
   return (
     <div className="bg-black text-white">
       {/* Hero Section */}
-      <section className="relative flex h-screen items-center justify-center">
+      <section className="relative flex min-h-[300px] h-[48svh] max-h-[520px] w-full items-center justify-center md:h-[42svh] md:max-h-[560px]">
         <div className="absolute inset-0 overflow-hidden">
           <picture className="block h-full w-full">
             <source srcSet="/images/hero.webp" type="image/webp" />
@@ -130,30 +131,38 @@ export function HomePage() {
               className="h-full w-full object-cover"
             />
           </picture>
-          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black" />
+          <PageHeroGradients />
         </div>
 
-        <div className="relative z-10 mx-auto max-w-5xl px-4 text-center">
+        <div className="relative z-10 mx-auto max-w-4xl px-4 text-center">
           <img
             src={logomarkImg}
             alt=""
             width={648}
             height={1239}
             decoding="async"
-            className="mx-auto mb-8 h-24 w-auto opacity-90"
+            className="mx-auto mb-3 h-16 w-auto opacity-90 md:mb-4 md:h-20"
           />
-          <h1 className="mb-8 text-6xl tracking-tighter md:text-8xl">IMMORTAL ATHLETICS</h1>
-          <p className="mb-12 text-2xl text-white/90 md:text-3xl">Build Strength. Build Legacy.</p>
+          <div
+            className="mx-auto mb-5 h-px w-20 bg-immortal-red/45 md:mb-6 md:w-24"
+            aria-hidden
+          />
+          <h1 className="mx-auto mb-5 max-w-[min(22ch,100%)] text-5xl tracking-tighter [text-shadow:0_1px_2px_rgb(0_0_0/0.9),0_8px_32px_rgb(0_0_0/0.55)] contrast-more:[text-shadow:0_2px_4px_rgb(0_0_0/1),0_12px_40px_rgb(0_0_0/0.75)] md:mb-6 md:text-7xl">
+            IMMORTAL ATHLETICS
+          </h1>
+          <p className="mb-6 text-xl text-white/90 [text-shadow:0_1px_2px_rgb(0_0_0/0.85),0_6px_24px_rgb(0_0_0/0.5)] contrast-more:text-white md:mb-8 md:text-2xl">
+            Build Strength. Build Legacy.
+          </p>
           <a
             href="#contact"
-            className="inline-block bg-immortal-red px-12 py-5 text-xl uppercase tracking-wide text-white transition-colors hover:bg-immortal-red-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-immortal-red"
+            className="inline-block bg-immortal-red px-10 py-4 text-lg uppercase tracking-wide text-white shadow-lg shadow-black/40 transition-colors hover:bg-immortal-red-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-immortal-red md:px-12 md:py-4 md:text-xl"
           >
             Book a Taster Session
           </a>
         </div>
 
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce">
-          <ChevronDown className="h-8 w-8 text-white/70" />
+        <div className="absolute bottom-3 left-1/2 -translate-x-1/2 motion-safe:animate-bounce md:bottom-4">
+          <ChevronDown className="h-8 w-8 text-white/70 drop-shadow-md" />
         </div>
       </section>
 
