@@ -1,4 +1,3 @@
-import { ChevronDown } from "lucide-react";
 import { Accordion } from "../components/Accordion";
 import { PageHeroGradients } from "../components/PageHeroGradients";
 import { lazy, Suspense, useEffect, useState } from "react";
@@ -117,7 +116,7 @@ export function HomePage() {
   return (
     <div className="bg-black text-white">
       {/* Hero Section */}
-      <section className="relative flex min-h-[300px] h-[48svh] max-h-[520px] w-full items-center justify-center md:h-[42svh] md:max-h-[560px]">
+      <section className="relative flex min-h-[300px] h-[48svh] max-h-[520px] w-full flex-col items-center justify-start overflow-visible px-0 pt-8 pb-10 md:h-[42svh] md:max-h-[560px] md:pt-10 md:pb-12">
         <div className="absolute inset-0 overflow-hidden">
           <picture className="block h-full w-full">
             <source srcSet="/images/hero.webp" type="image/webp" />
@@ -134,14 +133,14 @@ export function HomePage() {
           <PageHeroGradients />
         </div>
 
-        <div className="relative z-10 mx-auto max-w-4xl px-4 text-center">
+        <div className="relative z-10 mx-auto w-full max-w-4xl shrink-0 px-4 text-center">
           <img
             src={logomarkImg}
             alt=""
             width={648}
             height={1239}
             decoding="async"
-            className="mx-auto mb-3 h-16 w-auto opacity-90 md:mb-4 md:h-20"
+            className="mx-auto mb-3 block h-16 w-auto max-w-full object-contain opacity-90 md:mb-4 md:h-20"
           />
           <div
             className="mx-auto mb-5 h-px w-20 bg-immortal-red/45 md:mb-6 md:w-24"
@@ -159,10 +158,6 @@ export function HomePage() {
           >
             Book a Taster Session
           </a>
-        </div>
-
-        <div className="absolute bottom-3 left-1/2 -translate-x-1/2 motion-safe:animate-bounce md:bottom-4">
-          <ChevronDown className="h-8 w-8 text-white/70 drop-shadow-md" />
         </div>
       </section>
 
