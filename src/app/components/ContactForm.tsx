@@ -116,7 +116,7 @@ export function ContactForm() {
         </div>
 
         <div>
-          <label htmlFor="contact-name" className="block mb-2 uppercase tracking-wide text-sm">
+<label htmlFor="contact-name" className="block mb-2 uppercase tracking-wide text-sm text-white">
             Name
           </label>
           <input
