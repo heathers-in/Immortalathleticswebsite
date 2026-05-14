@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import { ImageWithFallback } from "../components/ImageWithFallback";
 import { GoogleVenueMap } from "../components/GoogleVenueMap";
 import { GoogleReviewsPanel } from "../components/GoogleReviewsPanel";
@@ -288,6 +289,13 @@ export function HomePage() {
             </div>
 
             <div>
+              <p className="text-sm text-white/60 mb-6 leading-relaxed">
+                Read our{" "}
+                <Link to="/privacy" className="text-[#E74C3C] hover:text-white transition-colors underline-offset-2 hover:underline">
+                  Privacy Policy
+                </Link>{" "}
+                for how we use personal data when you send a message through this form.
+              </p>
               <form className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block mb-2 uppercase tracking-wide text-sm">Name</label>
