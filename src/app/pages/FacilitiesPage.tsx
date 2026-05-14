@@ -22,7 +22,7 @@ export function FacilitiesPage() {
         <div className="max-w-7xl mx-auto">
           {/* The Platforms */}
           <div className="mb-24">
-            <p className="text-sm font-medium uppercase tracking-widest text-white/70 mb-3">Equipment</p>
+<p className="text-sm font-medium uppercase tracking-widest text-white/80 mb-3">Equipment</p>
             <div className="flex items-center gap-4 mb-8">
               <img src={logomarkImg} alt="" className="h-12 w-auto opacity-80" />
               <h2 className="text-5xl tracking-tight">The Platforms</h2>
