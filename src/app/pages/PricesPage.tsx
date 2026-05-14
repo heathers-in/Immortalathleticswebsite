@@ -14,18 +14,18 @@ function PricingTierCard({ pkg }: { pkg: WeightliftingMembershipPackage }) {
   return (
     <div
       className={`flex flex-col p-8 ${
-        pkg.highlighted ? "border-2 border-[#E74C3C] relative" : "border border-white/20"
+        pkg.highlighted ? "border-2 border-immortal-red relative" : "border border-white/20"
       }`}
     >
       {pkg.highlighted ? (
-        <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#E74C3C] text-white px-4 py-1 text-sm uppercase tracking-wide">
+        <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-immortal-red text-white px-4 py-1 text-sm uppercase tracking-wide">
           Most popular
         </div>
       ) : null}
       <h3 className="text-2xl mb-2">{pkg.name}</h3>
-      <div className="text-4xl mb-2 text-[#E74C3C]">{pkg.priceLabel}</div>
+      <div className="text-4xl mb-2 text-immortal-red">{pkg.priceLabel}</div>
       <p className="text-white/70 mb-6">{pkg.billingNote}</p>
-      <ul className="space-y-3 text-white/70 grow">
+      <ul className="space-y-3 text-white/80 grow">
         {pkg.bullets.map((line) => (
           <li key={line}>• {line}</li>
         ))}
@@ -34,7 +34,7 @@ function PricingTierCard({ pkg }: { pkg: WeightliftingMembershipPackage }) {
         href={pkg.checkoutUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-6 block text-center border border-[#E74C3C] text-[#E74C3C] px-4 py-3 text-sm uppercase tracking-wide hover:bg-[#E74C3C] hover:text-white transition-colors"
+        className="mt-6 block text-center border border-immortal-red text-immortal-red px-4 py-3 text-sm uppercase tracking-wide hover:bg-immortal-red hover:text-white transition-colors"
       >
         Buy on Kilo
       </a>
@@ -106,7 +106,7 @@ export function PricesPage() {
               <h2 className="text-2xl md:text-3xl tracking-tight text-white mb-3">
                 Weightlifting membership
               </h2>
-              <p className="text-white/70 leading-relaxed">
+              <p className="text-white/80 leading-relaxed">
                 Summary of Immortal Athletics weightlifting options.{" "}
                 <strong className="text-white/90">Final price, billing, and terms are set at checkout</strong>{" "}
                 on Kilo (New Horizon CrossFit).
@@ -139,9 +139,9 @@ export function PricesPage() {
                     className="border border-white/15 rounded-lg p-6 text-left flex flex-col"
                   >
                     <h4 className="text-lg font-medium text-white mb-2">{offer.title}</h4>
-                    <div className="text-3xl text-[#E74C3C] mb-1">{offer.priceLabel}</div>
-                    <p className="text-sm text-white/60 mb-4">{offer.billingNote}</p>
-                    <ul className="space-y-2 text-white/70 text-sm grow">
+                    <div className="text-3xl text-immortal-red mb-1">{offer.priceLabel}</div>
+                    <p className="text-sm text-white/80 mb-4">{offer.billingNote}</p>
+                    <ul className="space-y-2 text-white/80 text-sm grow">
                       {offer.lines.map((line) => (
                         <li key={line}>• {line}</li>
                       ))}
@@ -150,13 +150,13 @@ export function PricesPage() {
                 ))}
               </div>
 
-              <p className="text-center text-white/70 text-sm max-w-2xl mx-auto leading-relaxed">
+              <p className="text-center text-white/80 text-sm max-w-2xl mx-auto leading-relaxed">
                 {STUDENT_MEMBERSHIPS_OFFLINE_NOTE}
               </p>
               <div className="text-center">
                 <a
                   href="/#contact"
-                  className="inline-block border border-white/30 text-white px-8 py-3 text-sm uppercase tracking-wide hover:border-[#E74C3C] hover:text-[#E74C3C] transition-colors"
+                  className="inline-block border border-white/30 text-white px-8 py-3 text-sm uppercase tracking-wide hover:border-immortal-red hover:text-immortal-red transition-colors"
                 >
                   Contact us for details
                 </a>
@@ -168,13 +168,13 @@ export function PricesPage() {
                 href={NEW_HORIZON_KILO_SALES_PORTAL_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-[#E74C3C] text-white px-10 py-4 text-lg uppercase tracking-wide hover:bg-[#C0392B] transition-colors text-center w-full sm:w-auto"
+                className="inline-block bg-immortal-red text-white px-10 py-4 text-lg uppercase tracking-wide hover:bg-immortal-red-dark transition-colors text-center w-full sm:w-auto focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-immortal-red"
               >
                 View plans and purchase on Kilo
               </a>
             </div>
 
-            <p className="text-center text-sm text-white/50 mt-6 max-w-xl mx-auto">
+            <p className="text-center text-sm text-white/70 mt-6 max-w-xl mx-auto">
               CrossFit and other New Horizon products are listed on the same Kilo portal—open the
               link above to compare plans.
             </p>
@@ -189,7 +189,7 @@ export function PricesPage() {
           <div className="text-center">
             <a
               href="/#contact"
-              className="inline-block bg-[#E74C3C] text-white px-12 py-5 text-xl uppercase tracking-wide hover:bg-[#C0392B] transition-colors"
+              className="inline-block bg-immortal-red text-white px-12 py-5 text-xl uppercase tracking-wide hover:bg-immortal-red-dark transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-immortal-red"
             >
               Book a Taster Session
             </a>

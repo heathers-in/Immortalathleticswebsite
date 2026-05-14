@@ -22,9 +22,10 @@ export function GoogleVenueMap({ caption }: GoogleVenueMapProps) {
           href={IMMORTAL_GOOGLE_MAPS_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-sm text-[#E74C3C] underline-offset-2 hover:underline"
+          className="text-sm text-immortal-red underline-offset-2 hover:underline"
         >
           Open in Google Maps
+          <span className="sr-only"> (opens in a new tab)</span>
         </a>
         {caption ? (
           <p className="text-xs text-white/50">{caption}</p>

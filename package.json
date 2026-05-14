@@ -6,7 +6,8 @@
   "scripts": {
     "build": "vite build",
     "dev": "vite",
-    "dev:vercel": "npx vercel dev"
+    "dev:vercel": "npx vercel dev",
+    "optimize:images": "node scripts/optimize-images.mjs"
   },
   "dependencies": {
     "@emotion/react": "11.14.0",
@@ -70,6 +71,7 @@
     "@tailwindcss/vite": "4.1.12",
     "@vercel/node": "^4.0.0",
     "@vitejs/plugin-react": "4.7.0",
+    "sharp": "^0.34.5",
     "tailwindcss": "4.1.12",
     "vite": "^6.4.2"
   },

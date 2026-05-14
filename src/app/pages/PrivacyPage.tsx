@@ -14,7 +14,7 @@ const sections: { title: string; paragraphs: string[] }[] = [
   {
     title: "What personal data we process",
     paragraphs: [
-      "Website and enquiries: if you use the “Get in Touch” form or email us, we may process your name, email address, phone number (if provided), message content, and technical metadata such as IP address and browser type when those are logged by hosting or security systems.",
+      "Website and enquiries: if you use the “Get in Touch” form or email us, we may process your name, email address, phone number (if provided), message content, and technical metadata such as IP address and browser type when those are logged by hosting or security systems. Form submissions may be delivered to our inbox using Resend as an email service provider.",
       "Embedded features: pages may load content or scripts from Google (e.g. venue map, review information), Instagram (feed or links), and Kilo (e.g. schedule or purchase flows linked from this site). Those providers may process data in line with their own policies when you interact with their widgets or leave our site to complete a purchase.",
       "Reviews display: where we show Google reviews, our site may request review data from an API we operate or host (see your deployment configuration). That data originates from Google’s services and may include reviewer names, ratings, text, and related metadata.",
       "Membership and training: if you join as a member or use coaching or programming services, New Horizon CrossFit, Kilo, TrainHeroic, and other tools you use may process additional categories of data (payment, attendance, health and safety, programme data) under their terms and as described in your membership or club agreements.",
@@ -31,7 +31,7 @@ const sections: { title: string; paragraphs: string[] }[] = [
   {
     title: "Sharing and processors",
     paragraphs: [
-      "We do not sell your personal data. We may share it with service providers who help us operate the website, email, bookings, payments, coaching platforms, or the gym venue—for example hosting providers, New Horizon CrossFit, Kilo, Google, Meta/Instagram, TrainHeroic, and IT support—under appropriate terms and instructions where they act as processors.",
+      "We do not sell your personal data. We may share it with service providers who help us operate the website, email, bookings, payments, coaching platforms, or the gym venue—for example hosting providers, New Horizon CrossFit, Kilo, Google, Meta/Instagram, TrainHeroic, Resend (contact form email delivery), and IT support—under appropriate terms and instructions where they act as processors.",
       "Some providers may be based outside the UK; where personal data is transferred internationally, we aim to rely on appropriate safeguards such as the UK International Data Transfer Agreement or Addendum, or adequacy regulations, as required by UK data protection law.",
     ],
   },
@@ -82,9 +82,9 @@ export function PrivacyPage() {
         <div className="max-w-3xl mx-auto">
           <div className="flex items-center gap-4 mb-8">
             <img src={logomarkImg} alt="" className="h-10 w-auto opacity-80" />
-            <p className="text-sm uppercase tracking-wide text-white/50">Legal</p>
+            <p className="text-sm uppercase tracking-wide text-white/70">Legal</p>
           </div>
-          <p className="text-sm text-white/50 mb-12">Last updated: {lastUpdated}</p>
+          <p className="text-sm text-white/70 mb-12">Last updated: {lastUpdated}</p>
 
           <div className="space-y-12 text-white/80 leading-relaxed">
             {sections.map((section) => (
@@ -101,7 +101,7 @@ export function PrivacyPage() {
                           href="https://ico.org.uk/"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-[#E74C3C] hover:text-white transition-colors"
+                          className="text-immortal-red hover:text-white transition-colors"
                         >
                           ico.org.uk
                         </a>
@@ -124,7 +124,7 @@ export function PrivacyPage() {
               </p>
               <p>
                 For membership and payment terms, see also our{" "}
-                <Link to="/terms" className="text-[#E74C3C] hover:text-white transition-colors">
+                <Link to="/terms" className="text-immortal-red hover:text-white transition-colors">
                   Terms &amp; Conditions
                 </Link>
                 .
@@ -136,7 +136,7 @@ export function PrivacyPage() {
             Questions about privacy:{" "}
             <a
               href="mailto:info@immortalathletics.co.uk"
-              className="text-[#E74C3C] hover:text-white transition-colors"
+              className="text-immortal-red hover:text-white transition-colors"
             >
               info@immortalathletics.co.uk
             </a>

@@ -33,7 +33,7 @@ export function InstagramFeedSection() {
           href={PROFILE_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 text-[#E74C3C] hover:text-[#C0392B] underline text-sm"
+          className="inline-flex items-center gap-2 text-immortal-red hover:text-immortal-red-dark underline text-sm"
         >
           <Instagram className="h-4 w-4 shrink-0" aria-hidden />
           @immortalathletics on Instagram
@@ -47,14 +47,14 @@ export function InstagramFeedSection() {
   return (
     <div className="bg-black border border-white/10 p-8 md:p-12 rounded-lg">
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
-        <p className="text-sm text-white/50 uppercase tracking-wide">
+        <p className="text-sm text-zinc-300 uppercase tracking-wide">
           Latest from the club
         </p>
         <a
           href={PROFILE_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center justify-center gap-2 border border-white/20 px-5 py-2 text-sm uppercase tracking-wide hover:border-[#E74C3C] hover:text-[#E74C3C] transition-colors shrink-0"
+          className="inline-flex items-center justify-center gap-2 border border-white/20 px-5 py-2 text-sm uppercase tracking-wide hover:border-immortal-red hover:text-immortal-red transition-colors shrink-0"
         >
           <Instagram className="h-4 w-4" aria-hidden />
           View on Instagram
@@ -74,7 +74,7 @@ export function InstagramFeedSection() {
               href={item.permalink}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative aspect-square overflow-hidden bg-white/5 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#E74C3C] focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+              className="group relative aspect-square overflow-hidden bg-white/5 focus:outline-none focus-visible:ring-2 focus-visible:ring-immortal-red focus-visible:ring-offset-2 focus-visible:ring-offset-black"
             >
               <img
                 src={item.imageUrl}

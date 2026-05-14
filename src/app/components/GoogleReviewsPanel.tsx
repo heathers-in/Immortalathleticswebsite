@@ -14,7 +14,7 @@ function Stars({ value }: { value: number }) {
           key={i}
           className={`h-4 w-4 ${
             i < rounded
-              ? "fill-[#E74C3C] text-[#E74C3C]"
+              ? "fill-immortal-red text-immortal-red"
               : "text-white/25"
           }`}
         />
@@ -55,7 +55,7 @@ export function GoogleReviewsPanel() {
             href={FALLBACK_MAPS_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block text-[#E74C3C] hover:text-[#C0392B] underline text-sm"
+            className="inline-block text-immortal-red hover:text-immortal-red-dark underline text-sm"
           >
             View reviews on Google Maps
           </a>
@@ -96,7 +96,7 @@ export function GoogleReviewsPanel() {
           href={mapsHref}
           target="_blank"
           rel="noopener noreferrer"
-          className="shrink-0 inline-flex items-center justify-center border border-white/20 px-5 py-2 text-sm uppercase tracking-wide hover:border-[#E74C3C] hover:text-[#E74C3C] transition-colors"
+className="shrink-0 inline-flex items-center justify-center min-h-[44px] border border-white/20 px-5 py-2 text-sm uppercase tracking-wide hover:border-immortal-red hover:text-immortal-red transition-colors"
         >
           Read all on Google
         </a>
@@ -112,7 +112,7 @@ export function GoogleReviewsPanel() {
           {featured.map((r, index) => (
             <article
               key={`featured-${index}`}
-              className="border-l-4 border-[#E74C3C] pl-4 flex flex-col gap-3"
+              className="border-l-4 border-immortal-red pl-4 flex flex-col gap-3"
             >
               <div className="flex items-start gap-3">
                 {r.authorPhotoSrc ? (
@@ -142,7 +142,7 @@ export function GoogleReviewsPanel() {
                     ) : null}
                   </div>
                   {r.relativeTime ? (
-                    <p className="text-xs text-white/45 mt-0.5">
+                    <p className="text-xs text-zinc-400 mt-0.5">
                       {r.relativeTime}
                     </p>
                   ) : null}

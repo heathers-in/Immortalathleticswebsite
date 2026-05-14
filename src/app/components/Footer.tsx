@@ -6,7 +6,7 @@ import headerAlt from "../../imports/header-alt.png";
 
 export function Footer() {
   return (
-    <footer className="bg-black text-white border-t border-[#E74C3C]/20">
+    <footer className="bg-black text-white border-t border-immortal-red/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-5 gap-12">
           <div className="space-y-6">
@@ -73,8 +73,9 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-white/70 transition-colors"
+                aria-label="Immortal Athletics on Instagram (opens in a new tab)"
               >
-                <Instagram className="h-6 w-6" />
+                <Instagram className="h-6 w-6" aria-hidden />
               </a>
             </div>
             <div className="mt-6 space-y-2 text-sm text-white/70">
@@ -88,7 +89,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-[#E74C3C]/20 text-center text-white/50 text-sm">
+<div className="mt-12 pt-8 border-t border-immortal-red/20 text-center text-white/60 text-sm">
           <p>&copy; {new Date().getFullYear()} Immortal Athletics. All rights reserved.</p>
         </div>
       </div>

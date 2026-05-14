@@ -29,4 +29,18 @@
   When both are set, the site uses `https://www.google.com/maps/embed/v1/place` instead of the coordinate fallback.
 
   Copy [.env.example](.env.example) to `.env.local` for reference (do not commit secrets).
+
+  ## Contact form (Vercel + Resend)
+
+  The home page **Get in Touch** form posts to `/api/contact`, which sends email via [Resend](https://resend.com/) using a **server-side API key** (never exposed to the browser).
+
+  1. Create a Resend account, verify your sending domain (or use their test sender while evaluating).
+  2. In Vercel → **Environment variables**, set:
+     - `RESEND_API_KEY` — Resend API key (required for real delivery).
+     - `CONTACT_TO_EMAIL` — inbox that receives enquiries (default: `info@immortalathletics.co.uk`).
+     - `CONTACT_FROM_EMAIL` — verified sender, e.g. `Immortal Athletics <enquiries@yourdomain.com>` (default Resend test sender only works for limited testing).
+     - `CONTACT_ALLOWED_ORIGINS` — optional comma-separated list of allowed `Origin` values for CORS (defaults include localhost and immortalathletics.co.uk). Add your **Vercel preview** URL if you test the form against a preview deployment while running `npm run dev` with `VITE_REVIEWS_API_BASE` pointing at that preview.
+  3. Run `npm run dev:vercel` locally so `/api/contact` exists alongside Vite, or set `VITE_REVIEWS_API_BASE` to a deployment URL that has these env vars set (same pattern as Google reviews).
+
+  The API applies basic **validation**, a **honeypot** field, **per-IP rate limiting** (best-effort on serverless), and **origin checks** for browser `Origin` headers.
   

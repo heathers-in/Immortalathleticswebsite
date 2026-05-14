@@ -1,5 +1,5 @@
 import { ImageWithFallback } from "../components/ImageWithFallback";
-import gymInsideImg from "../../imports/new_horizon_crossfit_gym_inside.png";
+import gymInsideImg from "../../imports/new_horizon_crossfit_gym_inside.jpg";
 import { GoogleVenueMap } from "../components/GoogleVenueMap";
 import logomarkImg from "../../imports/Immortal_Logomark_1C.png";
 
@@ -21,7 +21,8 @@ export function FacilitiesPage() {
       <section className="py-24 px-4">
         <div className="max-w-7xl mx-auto">
           {/* The Platforms */}
-          <div className="mb-24">
+<div id="platforms" className="mb-24 scroll-mt-20">
+<p className="text-sm font-medium uppercase tracking-widest text-white/80 mb-3">Equipment</p>
             <div className="flex items-center gap-4 mb-8">
               <img src={logomarkImg} alt="" className="h-12 w-auto opacity-80" />
               <h2 className="text-5xl tracking-tight">The Platforms</h2>
@@ -66,8 +67,9 @@ export function FacilitiesPage() {
           </div>
 
           {/* The Box */}
-          <div className="mb-24 border-t border-[#E74C3C]/20 pt-24">
-            <h2 className="text-5xl mb-8 tracking-tight">The Box</h2>
+          <div className="mb-24 border-t border-immortal-red/20 pt-24">
+            <p className="text-sm font-medium uppercase tracking-widest text-white/70 mb-3">Venue</p>
+<h2 className="text-5xl mb-8 tracking-tight">The Box</h2>
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <img
@@ -98,7 +100,8 @@ export function FacilitiesPage() {
           </div>
 
           {/* Location */}
-          <div className="border-t border-[#E74C3C]/20 pt-24">
+          <div className="border-t border-immortal-red/20 pt-24">
+            <p className="text-sm font-medium uppercase tracking-widest text-white/70 mb-3">Visit</p>
             <h2 className="text-5xl mb-12 tracking-tight">Location & Access</h2>
             <div className="grid md:grid-cols-2 gap-12">
               <div>
@@ -107,8 +110,9 @@ export function FacilitiesPage() {
                 </div>
               </div>
               <div className="space-y-6">
+                <h3 className="text-2xl mb-6 tracking-tight">Visit details</h3>
                 <div>
-                  <h3 className="text-2xl mb-3">Address</h3>
+                  <h4 className="text-xl font-medium mb-3">Address</h4>
                   <p className="text-white/80 text-lg">
                     New Horizon CrossFit<br />
                     Unit 3, Woodhall Farm<br />
@@ -116,19 +120,19 @@ export function FacilitiesPage() {
                     </p>
                 </div>
                 <div>
-                  <h3 className="text-2xl mb-3">Parking</h3>
+                  <h4 className="text-xl font-medium mb-3">Parking</h4>
                   <p className="text-white/80">
                     Free on-site parking available for all members and visitors. The facility is easily accessible by car with ample spaces in front of the building.
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-2xl mb-3">Public Transport</h3>
+                  <h4 className="text-xl font-medium mb-3">Public Transport</h4>
                   <p className="text-white/80">
                     The nearest bus stop is a 10-minute walk from the facility, or a 35-minute walk from Hatfield train station. There are convenient and safe cycling paths from Hatfield and Welwyn Garden City.
                   </p>
                 </div>
                 <div>
-                  <h3 className="text-2xl mb-3">Accessibility</h3>
+                  <h4 className="text-xl font-medium mb-3">Accessibility</h4>
                   <p className="text-white/80">
                     Ground-floor access with wheelchair-friendly facilities. Please contact us in advance if you have specific accessibility requirements.
                   </p>

@@ -8,7 +8,7 @@ export function Navigation() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-black text-white sticky top-0 z-50 border-b border-[#E74C3C]/20">
+    <nav className="bg-black text-white sticky top-0 z-50 border-b border-immortal-red/20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center gap-12">
@@ -69,23 +69,27 @@ export function Navigation() {
           <div className="flex items-center gap-4">
             <Link
               to="/#contact"
-              className="hidden sm:block bg-[#E74C3C] text-white px-6 py-3 hover:bg-[#C0392B] transition-colors uppercase tracking-wide text-sm"
+              className="hidden sm:block bg-immortal-red text-white px-6 py-3 hover:bg-immortal-red-dark transition-colors uppercase tracking-wide text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-immortal-red"
             >
               Book a Taster Session
             </Link>
 
             <button
-              className="lg:hidden"
+              type="button"
+              className="lg:hidden p-2 -m-2 text-white hover:text-white/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded-sm"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-expanded={isMobileMenuOpen}
+              aria-controls="site-mobile-nav"
+              aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
             >
-              {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isMobileMenuOpen ? <X className="h-6 w-6" aria-hidden /> : <Menu className="h-6 w-6" aria-hidden />}
             </button>
           </div>
         </div>
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden border-t border-white/10 py-6">
+          <div id="site-mobile-nav" className="lg:hidden border-t border-white/10 py-6">
             <div className="flex flex-col gap-4">
               <Link
                 to="/schedule"
@@ -131,7 +135,7 @@ export function Navigation() {
               </Link>
               <Link
                 to="/#contact"
-                className="bg-[#E74C3C] text-white px-6 py-3 hover:bg-[#C0392B] transition-colors uppercase tracking-wide text-sm text-center mt-4"
+                className="bg-immortal-red text-white px-6 py-3 hover:bg-immortal-red-dark transition-colors uppercase tracking-wide text-sm text-center mt-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-immortal-red"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Book a Taster Session
