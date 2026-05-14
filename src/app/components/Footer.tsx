@@ -89,7 +89,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-immortal-red/20 text-center text-white/50 text-sm">
+<div className="mt-12 pt-8 border-t border-immortal-red/20 text-center text-white/60 text-sm">
           <p>&copy; {new Date().getFullYear()} Immortal Athletics. All rights reserved.</p>
         </div>
       </div>
