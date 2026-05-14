@@ -75,17 +75,21 @@ export function Navigation() {
             </Link>
 
             <button
-              className="lg:hidden"
+              type="button"
+              className="lg:hidden p-2 -m-2 text-white hover:text-white/80 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded-sm"
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+              aria-expanded={isMobileMenuOpen}
+              aria-controls="site-mobile-nav"
+              aria-label={isMobileMenuOpen ? "Close menu" : "Open menu"}
             >
-              {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isMobileMenuOpen ? <X className="h-6 w-6" aria-hidden /> : <Menu className="h-6 w-6" aria-hidden />}
             </button>
           </div>
         </div>
 
         {/* Mobile Menu */}
         {isMobileMenuOpen && (
-          <div className="lg:hidden border-t border-white/10 py-6">
+          <div id="site-mobile-nav" className="lg:hidden border-t border-white/10 py-6">
             <div className="flex flex-col gap-4">
               <Link
                 to="/schedule"

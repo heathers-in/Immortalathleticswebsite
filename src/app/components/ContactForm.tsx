@@ -116,7 +116,7 @@ export function ContactForm() {
         </div>
 
         <div>
-          <label htmlFor="contact-name" className="block mb-2 uppercase tracking-wide text-sm">
+          <label htmlFor="contact-name" className="block mb-2 uppercase tracking-wide text-sm text-white">
             Name
           </label>
           <input
@@ -133,7 +133,7 @@ export function ContactForm() {
           />
         </div>
         <div>
-          <label htmlFor="contact-email" className="block mb-2 uppercase tracking-wide text-sm">
+          <label htmlFor="contact-email" className="block mb-2 uppercase tracking-wide text-sm text-white">
             Email
           </label>
           <input
@@ -150,7 +150,7 @@ export function ContactForm() {
           />
         </div>
         <div>
-          <label htmlFor="contact-phone" className="block mb-2 uppercase tracking-wide text-sm">
+          <label htmlFor="contact-phone" className="block mb-2 uppercase tracking-wide text-sm text-white">
             Phone
           </label>
           <input
@@ -166,7 +166,10 @@ export function ContactForm() {
           />
         </div>
         <div>
-          <label htmlFor="contact-message" className="block mb-2 uppercase tracking-wide text-sm">
+          <label
+            htmlFor="contact-message"
+            className="block mb-2 uppercase tracking-wide text-sm text-white"
+          >
             Message
           </label>
           <textarea

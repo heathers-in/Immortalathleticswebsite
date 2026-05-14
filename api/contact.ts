@@ -42,7 +42,8 @@ function setCors(req: VercelRequest, res: VercelResponse) {
   } else if (!origin) {
     res.setHeader("Access-Control-Allow-Origin", "*");
   } else {
-    res.setHeader("Access-Control-Allow-Origin", allowed[0] ?? "*");
+    // Disallowed Origin: never echo a different allowed origin here — that misrepresents CORS
+    // policy to clients and tools. Omit Access-Control-Allow-Origin; browser will treat as denied.
     res.setHeader("Vary", "Origin");
   }
   res.setHeader("Access-Control-Allow-Methods", "POST, OPTIONS");
@@ -95,8 +96,12 @@ function validate(body: Body): { ok: true; data: ContactPayload } | { ok: false;
   const phone = str(body.phone, 40);
   const message = str(body.message, 4000);
 
-  if (name.length < 1) return { ok: false, error: "Please enter your name." };
-  if (name.length < 2) return { ok: false, error: "Please enter a valid name." };
+  if (name.length < 2) {
+    return {
+      ok: false,
+      error: name.length === 0 ? "Please enter your name." : "Please enter a valid name.",
+    };
+  }
   if (!email || !EMAIL_RE.test(email)) return { ok: false, error: "Please enter a valid email address." };
   if (message.length < 10) return { ok: false, error: "Please enter a message (at least 10 characters)." };
   if (message.length > 4000) return { ok: false, error: "Message is too long." };

@@ -86,7 +86,7 @@ export function HomePage() {
           </p>
           <a
             href="#contact"
-            className="inline-block bg-[#E74C3C] text-white px-12 py-5 text-xl uppercase tracking-wide hover:bg-[#C0392B] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#E74C3C]"
+            className="inline-block bg-immortal-red text-white px-12 py-5 text-xl uppercase tracking-wide hover:bg-immortal-red-dark transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-immortal-red"
           >
             Book a Taster Session
           </a>
@@ -125,7 +125,7 @@ export function HomePage() {
           </div>
 
           {/* Meet the Coach */}
-          <div className="border-t border-[#E74C3C]/20 pt-16">
+          <div className="border-t border-immortal-red/20 pt-16">
             <h3 className="text-4xl mb-12 tracking-tight">Meet Your Coach</h3>
             <div className="grid md:grid-cols-2 gap-12 items-start">
               <div className="relative">
@@ -184,7 +184,7 @@ export function HomePage() {
                   key={index}
                   onClick={() => setCurrentSlide(index)}
                   className={`w-2 h-2 rounded-full transition-colors ${
-                    index === currentSlide ? "bg-[#E74C3C]" : "bg-white/30"
+                    index === currentSlide ? "bg-immortal-red" : "bg-white/30"
                   }`}
                   aria-label={`Go to slide ${index + 1}`}
                 />
@@ -251,7 +251,7 @@ export function HomePage() {
           <div className="text-center">
             <a
               href="#contact"
-              className="inline-block bg-[#E74C3C] text-white px-12 py-5 text-xl uppercase tracking-wide hover:bg-[#C0392B] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#E74C3C]"
+              className="inline-block bg-immortal-red text-white px-12 py-5 text-xl uppercase tracking-wide hover:bg-immortal-red-dark transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-immortal-red"
             >
               Book a Taster Session
             </a>

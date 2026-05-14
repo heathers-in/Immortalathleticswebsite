@@ -42,8 +42,8 @@ export function CoachingPage() {
               </div>
               <div className="md:col-span-2 space-y-4 text-white/80">
                 <div>
-                  <h2 className="text-4xl mb-2">Sai Asghari</h2>
-                  <p className="text-xl text-white/75">Head Coach & Founder</p>
+<h2 className="text-5xl mb-2">Sai Asghari</h2>
+                  <p className="text-xl text-white/90">Head Coach & Founder</p>
                 </div>
                 <p className="text-lg leading-relaxed">
                   With over a decade of coaching experience and a technical foundation built on elite Turkish and Bulgarian weightlifting systems, Sai brings world-class methodology to every athlete he works with. As a multi-time English Championships competitor, he understands the demands of competition and trains athletes not just to lift, but to perform under pressure.
@@ -122,36 +122,35 @@ export function CoachingPage() {
                   <div className="flex gap-4">
                     <Clipboard className="h-6 w-6 flex-shrink-0 mt-1 text-white/70" />
                     <div>
-                      <p className="text-white mb-1">Initial Assessment</p>
-                      <p className="text-sm text-white/75">Video analysis, movement screening, and goal-setting call</p>
+                      <p className="text-sm text-white/90">Video analysis, movement screening, and goal-setting call</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
                     <Calendar className="h-6 w-6 flex-shrink-0 mt-1 text-white/70" />
                     <div>
                       <p className="text-white mb-1">Custom programme</p>
-                      <p className="text-sm text-white/75">Individualised training delivered weekly via app or spreadsheet</p>
+                      <p className="text-sm text-white/90">Individualised training delivered weekly via app or spreadsheet</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
                     <Video className="h-6 w-6 flex-shrink-0 mt-1 text-white/70" />
                     <div>
                       <p className="text-white mb-1">Video Review & Feedback</p>
-                      <p className="text-sm text-white/75">Submit videos, receive detailed technique feedback within 24 hours</p>
+                      <p className="text-sm text-white/90">Submit videos, receive detailed technique feedback within 24 hours</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
                     <MessageSquare className="h-6 w-6 flex-shrink-0 mt-1 text-white/70" />
                     <div>
                       <p className="text-white mb-1">Ongoing Communication</p>
-                      <p className="text-sm text-white/75">Direct access to your coach for questions and adjustments</p>
+                      <p className="text-sm text-white/90">Direct access to your coach for questions and adjustments</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
                     <Target className="h-6 w-6 flex-shrink-0 mt-1 text-white/70" />
                     <div>
                       <p className="text-white mb-1">Progress Tracking & Adjustments</p>
-                      <p className="text-sm text-white/75">Regular check-ins and programme adjustments based on your progress</p>
+                      <p className="text-sm text-white/90">Regular check-ins and programme adjustments based on your progress</p>
                     </div>
                   </div>
                 </div>
