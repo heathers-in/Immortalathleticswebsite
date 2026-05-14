@@ -101,7 +101,7 @@ export function ContactForm() {
         for how we use personal data when you send a message through this form.
       </p>
 
-          <form className="space-y-6 relative" onSubmit={onSubmit} noValidate>
+      <form className="space-y-6 relative" onSubmit={onSubmit} noValidate>
         <div className="absolute -left-[9999px] top-auto w-px h-px overflow-hidden" aria-hidden="true">
           <label htmlFor="contact-company">Company (leave blank)</label>
           <input
