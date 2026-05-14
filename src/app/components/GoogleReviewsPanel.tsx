@@ -96,7 +96,7 @@ export function GoogleReviewsPanel() {
           href={mapsHref}
           target="_blank"
           rel="noopener noreferrer"
-          className="shrink-0 inline-flex items-center justify-center border border-white/20 px-5 py-2 text-sm uppercase tracking-wide hover:border-immortal-red hover:text-immortal-red transition-colors"
+className="shrink-0 inline-flex items-center justify-center min-h-[44px] border border-white/20 px-5 py-2 text-sm uppercase tracking-wide hover:border-immortal-red hover:text-immortal-red transition-colors"
         >
           Read all on Google
         </a>
