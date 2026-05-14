@@ -3,6 +3,8 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import sharp from "sharp";
 
+/** Optimizes JPEGs and converts listed PNGs to JPG in `src/imports/`. The repo commits the JPG outputs so builds work without running this script; run after replacing source PNGs or adding new assets. */
+
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(__dirname, "..");
 const importsDir = path.join(root, "src", "imports");

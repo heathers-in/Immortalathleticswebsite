@@ -101,7 +101,7 @@ export function PrivacyPage() {
                           href="https://ico.org.uk/"
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-[#E74C3C] hover:text-white transition-colors"
+                          className="text-immortal-red hover:text-white transition-colors"
                         >
                           ico.org.uk
                         </a>
@@ -124,7 +124,7 @@ export function PrivacyPage() {
               </p>
               <p>
                 For membership and payment terms, see also our{" "}
-                <Link to="/terms" className="text-[#E74C3C] hover:text-white transition-colors">
+                <Link to="/terms" className="text-immortal-red hover:text-white transition-colors">
                   Terms &amp; Conditions
                 </Link>
                 .
@@ -136,7 +136,7 @@ export function PrivacyPage() {
             Questions about privacy:{" "}
             <a
               href="mailto:info@immortalathletics.co.uk"
-              className="text-[#E74C3C] hover:text-white transition-colors"
+              className="text-immortal-red hover:text-white transition-colors"
             >
               info@immortalathletics.co.uk
             </a>

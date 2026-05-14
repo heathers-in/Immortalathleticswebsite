@@ -42,7 +42,7 @@ export function CoachingPage() {
               </div>
               <div className="md:col-span-2 space-y-4 text-white/80">
                 <div>
-<h2 className="text-5xl mb-2">Sai Asghari</h2>
+                  <h2 className="text-5xl mb-2">Sai Asghari</h2>
                   <p className="text-xl text-white/90">Head Coach & Founder</p>
                 </div>
                 <p className="text-lg leading-relaxed">
@@ -60,7 +60,7 @@ export function CoachingPage() {
             {/* 1-2-1 Coaching */}
             <div className="bg-zinc-950 border border-white/10 p-12 rounded-lg">
               <div className="mb-8">
-                <User className="h-12 w-12 mb-4 text-[#E74C3C]" />
+                <User className="h-12 w-12 mb-4 text-immortal-red" />
                 <h2 className="text-4xl mb-3 tracking-tight">1-2-1 Coaching</h2>
                 <p className="text-xl text-white/70">In-person, personalised attention</p>
               </div>
@@ -96,7 +96,7 @@ export function CoachingPage() {
 
               <a
                 href="/#contact"
-                className="block w-full text-center bg-[#E74C3C] text-white px-8 py-4 uppercase tracking-wide hover:bg-[#C0392B] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#E74C3C]"
+                className="block w-full text-center bg-immortal-red text-white px-8 py-4 uppercase tracking-wide hover:bg-immortal-red-dark transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-immortal-red"
               >
                 Enquire About 1-2-1 Coaching
               </a>
@@ -105,7 +105,7 @@ export function CoachingPage() {
             {/* Online Coaching */}
             <div className="bg-zinc-950 border border-white/10 p-12 rounded-lg">
               <div className="mb-8">
-                <Video className="h-12 w-12 mb-4 text-[#E74C3C]" />
+                <Video className="h-12 w-12 mb-4 text-immortal-red" />
                 <h2 className="text-4xl mb-3 tracking-tight">Online Coaching</h2>
                 <p className="text-xl text-white/70">Remote programme & support</p>
               </div>
@@ -122,6 +122,7 @@ export function CoachingPage() {
                   <div className="flex gap-4">
                     <Clipboard className="h-6 w-6 flex-shrink-0 mt-1 text-white/70" />
                     <div>
+                      <p className="text-white mb-1">Initial Assessment</p>
                       <p className="text-sm text-white/90">Video analysis, movement screening, and goal-setting call</p>
                     </div>
                   </div>
@@ -170,7 +171,7 @@ export function CoachingPage() {
 
               <a
                 href="/#contact"
-                className="block w-full text-center bg-[#E74C3C] text-white px-8 py-4 uppercase tracking-wide hover:bg-[#C0392B] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#E74C3C]"
+                className="block w-full text-center bg-immortal-red text-white px-8 py-4 uppercase tracking-wide hover:bg-immortal-red-dark transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-immortal-red"
               >
                 Enquire About Online Coaching
               </a>
@@ -178,14 +179,14 @@ export function CoachingPage() {
           </div>
 
           {/* Bottom CTA */}
-          <div className="mt-16 text-center border-t border-[#E74C3C]/20 pt-16">
+          <div className="mt-16 text-center border-t border-immortal-red/20 pt-16">
             <h2 className="text-3xl md:text-4xl mb-6 tracking-tight">Not sure which option is right for you?</h2>
             <p className="text-xl text-white/70 mb-8 max-w-2xl mx-auto">
               Book a free consultation call to discuss your goals, experience level, and training needs. We'll help you choose the coaching approach that fits your lifestyle and ambitions.
             </p>
             <a
               href="/#contact"
-              className="inline-block bg-[#E74C3C] text-white px-12 py-5 text-xl uppercase tracking-wide hover:bg-[#C0392B] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#E74C3C]"
+              className="inline-block bg-immortal-red text-white px-12 py-5 text-xl uppercase tracking-wide hover:bg-immortal-red-dark transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-immortal-red"
             >
               Book Free Consultation
             </a>

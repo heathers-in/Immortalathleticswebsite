@@ -67,7 +67,7 @@ export function FacilitiesPage() {
           </div>
 
           {/* The Box */}
-          <div className="mb-24 border-t border-[#E74C3C]/20 pt-24">
+          <div className="mb-24 border-t border-immortal-red/20 pt-24">
             <p className="text-sm font-medium uppercase tracking-widest text-white/70 mb-3">Venue</p>
 <h2 className="text-5xl mb-8 tracking-tight">The Box</h2>
             <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -100,7 +100,7 @@ export function FacilitiesPage() {
           </div>
 
           {/* Location */}
-          <div className="border-t border-[#E74C3C]/20 pt-24">
+          <div className="border-t border-immortal-red/20 pt-24">
             <p className="text-sm font-medium uppercase tracking-widest text-white/70 mb-3">Visit</p>
             <h2 className="text-5xl mb-12 tracking-tight">Location & Access</h2>
             <div className="grid md:grid-cols-2 gap-12">

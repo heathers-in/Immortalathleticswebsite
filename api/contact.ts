@@ -202,6 +202,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
 
   const honeypot = str(body.company, 200);
   if (honeypot.length > 0) {
+    // Same shape as a bare acknowledgement; omit `sent` so real clients do not show "message sent".
     res.status(200).json({ ok: true });
     return;
   }
@@ -235,5 +236,5 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     return;
   }
 
-  res.status(200).json({ ok: true });
+  res.status(200).json({ ok: true, sent: true });
 }

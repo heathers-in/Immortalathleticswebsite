@@ -55,21 +55,21 @@ export function YouthPage() {
                     <h3 className="text-2xl mb-6">Programme Highlights</h3>
                     <div className="space-y-4">
                       <div className="flex gap-4">
-                        <Users className="h-6 w-6 flex-shrink-0 mt-1 text-[#E74C3C]" />
+                        <Users className="h-6 w-6 flex-shrink-0 mt-1 text-immortal-red" />
                         <div>
                           <p className="text-white mb-1">Small Group Coaching</p>
                           <p className="text-sm text-white/60">Max 8 athletes per session for individualised attention</p>
                         </div>
                       </div>
                       <div className="flex gap-4">
-                        <Trophy className="h-6 w-6 flex-shrink-0 mt-1 text-[#E74C3C]" />
+                        <Trophy className="h-6 w-6 flex-shrink-0 mt-1 text-immortal-red" />
                         <div>
                           <p className="text-white mb-1">Competition Pathway</p>
                           <p className="text-sm text-white/60">Opportunities to compete at regional and national youth events</p>
                         </div>
                       </div>
                       <div className="flex gap-4">
-                        <Heart className="h-6 w-6 flex-shrink-0 mt-1 text-[#E74C3C]" />
+                        <Heart className="h-6 w-6 flex-shrink-0 mt-1 text-immortal-red" />
                         <div>
                           <p className="text-white mb-1">Supportive Environment</p>
                           <p className="text-sm text-white/60">Positive, encouraging culture where every athlete belongs</p>
@@ -79,10 +79,10 @@ export function YouthPage() {
                   </div>
 
                   <div className="bg-zinc-950 border border-white/10 p-8 rounded-lg">
-                    <PoundSterling className="h-10 w-10 mb-4 text-[#E74C3C]" />
+                    <PoundSterling className="h-10 w-10 mb-4 text-immortal-red" />
                     <h3 className="text-2xl mb-6">Youth membership</h3>
                     <div className="mb-6">
-                      <div className="text-5xl mb-2 text-[#E74C3C]">£90</div>
+                      <div className="text-5xl mb-2 text-immortal-red">£90</div>
                       <p className="text-white/70">Per month · ages 17 and under</p>
                       <p className="text-white/60 text-sm mt-3">
                         2× Immortal Athletics coached classes and 2× weightlifting platform open gym per week.
@@ -97,7 +97,7 @@ export function YouthPage() {
                     <div className="pt-6 border-t border-white/10">
                       <p className="text-sm text-white/60">
                         This tier is arranged through the club (not on Kilo).{" "}
-                        <a href="/#contact" className="text-[#E74C3C] hover:underline">
+                        <a href="/#contact" className="text-immortal-red hover:underline">
                           Contact us
                         </a>{" "}
                         to join or ask about options for younger athletes.
@@ -110,7 +110,7 @@ export function YouthPage() {
           </div>
 
           {/* Ages & Structure */}
-          <div className="mb-24 border-t border-[#E74C3C]/20 pt-24">
+          <div className="mb-24 border-t border-immortal-red/20 pt-24">
             <h2 className="text-4xl mb-8 tracking-tight">Ages & What to Expect</h2>
             <div className="grid md:grid-cols-2 gap-8">
               <div className="bg-zinc-950 border border-white/10 p-8 rounded-lg">
@@ -142,9 +142,9 @@ export function YouthPage() {
           </div>
 
           {/* Safeguarding Section */}
-          <div id="safeguarding" className="border-t-4 border-[#E74C3C] pt-24">
+          <div id="safeguarding" className="border-t-4 border-immortal-red pt-24">
             <div className="flex items-center gap-4 mb-8">
-              <Shield className="h-12 w-12 text-[#E74C3C]" />
+              <Shield className="h-12 w-12 text-immortal-red" />
               <h2 className="text-5xl tracking-tight">Safeguarding Policy</h2>
             </div>
 
@@ -212,7 +212,7 @@ export function YouthPage() {
           <div className="mt-16 text-center">
             <a
               href="/#contact"
-              className="inline-block bg-[#E74C3C] text-white px-12 py-5 text-xl uppercase tracking-wide hover:bg-[#C0392B] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#E74C3C]"
+              className="inline-block bg-immortal-red text-white px-12 py-5 text-xl uppercase tracking-wide hover:bg-immortal-red-dark transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-immortal-red"
             >
               Book a Taster Session
             </a>

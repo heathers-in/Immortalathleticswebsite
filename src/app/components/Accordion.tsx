@@ -16,7 +16,7 @@ export function Accordion({ items }: AccordionProps) {
   return (
     <div className="space-y-4">
       {items.map((item, index) => (
-        <div key={index} className="border border-white/20 hover:border-[#E74C3C]/40 transition-colors">
+        <div key={index} className="border border-white/20 hover:border-immortal-red/40 transition-colors">
           <button
             onClick={() => setOpenIndex(openIndex === index ? null : index)}
             className="w-full flex items-center justify-between p-6 text-left hover:bg-white/5 transition-colors"
@@ -24,7 +24,7 @@ export function Accordion({ items }: AccordionProps) {
             <span className="text-xl">{item.question}</span>
             <ChevronDown
               className={`h-5 w-5 transition-transform ${
-                openIndex === index ? "rotate-180 text-[#E74C3C]" : ""
+                openIndex === index ? "rotate-180 text-immortal-red" : ""
               }`}
             />
           </button>

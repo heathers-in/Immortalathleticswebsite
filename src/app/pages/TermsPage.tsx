@@ -80,7 +80,7 @@ export function TermsPage() {
                   {section.title}
                 </h2>
                 {"effective" in section && section.effective ? (
-                  <p className="text-sm text-[#E74C3C] mb-3">{section.effective}</p>
+                  <p className="text-sm text-immortal-red mb-3">{section.effective}</p>
                 ) : null}
                 {section.body.map((paragraph, idx) => (
                   <p key={idx} className="mb-4 last:mb-0">
@@ -95,7 +95,7 @@ export function TermsPage() {
             If you have questions about these terms, contact us at{" "}
             <a
               href="mailto:info@immortalathletics.co.uk"
-              className="text-[#E74C3C] hover:text-white transition-colors"
+              className="text-immortal-red hover:text-white transition-colors"
             >
               info@immortalathletics.co.uk
             </a>

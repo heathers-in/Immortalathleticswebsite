@@ -47,6 +47,8 @@ export function ContactForm() {
         error?: string;
         code?: string;
         ok?: boolean;
+        /** Present only after Resend accepted the message (never set for honeypot discard). */
+        sent?: boolean;
       };
 
       if (!res.ok) {
@@ -64,7 +66,21 @@ export function ContactForm() {
         return;
       }
 
-      setStatus("success");
+      if (json.sent === true) {
+        setStatus("success");
+        return;
+      }
+
+      if (json.ok) {
+        setErrorMessage(
+          "We could not confirm your enquiry was delivered. Please try again or email info@immortalathletics.co.uk directly.",
+        );
+        setStatus("error");
+        return;
+      }
+
+      setErrorMessage("Something went wrong. Please try again or email us directly.");
+      setStatus("error");
     } catch {
       setErrorMessage("Network error. Check your connection or email info@immortalathletics.co.uk directly.");
       setStatus("error");
@@ -80,7 +96,7 @@ export function ContactForm() {
         <button
           type="button"
           onClick={resetForNewMessage}
-          className="border border-white/30 text-white px-8 py-3 text-sm uppercase tracking-wide hover:border-[#E74C3C] hover:text-[#E74C3C] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+          className="border border-white/30 text-white px-8 py-3 text-sm uppercase tracking-wide hover:border-immortal-red hover:text-immortal-red transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black"
         >
           Send another message
         </button>
@@ -94,7 +110,7 @@ export function ContactForm() {
         Read our{" "}
         <Link
           to="/privacy"
-          className="text-[#E74C3C] hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[#E74C3C] focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded-sm underline-offset-2 hover:underline"
+          className="text-immortal-red hover:text-white transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-immortal-red focus-visible:ring-offset-2 focus-visible:ring-offset-black rounded-sm underline-offset-2 hover:underline"
         >
           Privacy Policy
         </Link>{" "}
@@ -123,7 +139,7 @@ export function ContactForm() {
             type="text"
             id="contact-name"
             name="name"
-            className="w-full bg-black border border-white/20 px-4 py-3 text-white focus:outline-none focus:border-[#E74C3C] focus-visible:ring-2 focus-visible:ring-[#E74C3C] focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+            className="w-full bg-black border border-white/20 px-4 py-3 text-white focus:outline-none focus:border-immortal-red focus-visible:ring-2 focus-visible:ring-immortal-red focus-visible:ring-offset-2 focus-visible:ring-offset-black"
             required
             maxLength={120}
             autoComplete="name"
@@ -140,7 +156,7 @@ export function ContactForm() {
             type="email"
             id="contact-email"
             name="email"
-            className="w-full bg-black border border-white/20 px-4 py-3 text-white focus:outline-none focus:border-[#E74C3C] focus-visible:ring-2 focus-visible:ring-[#E74C3C] focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+            className="w-full bg-black border border-white/20 px-4 py-3 text-white focus:outline-none focus:border-immortal-red focus-visible:ring-2 focus-visible:ring-immortal-red focus-visible:ring-offset-2 focus-visible:ring-offset-black"
             required
             maxLength={254}
             autoComplete="email"
@@ -157,7 +173,7 @@ export function ContactForm() {
             type="tel"
             id="contact-phone"
             name="phone"
-            className="w-full bg-black border border-white/20 px-4 py-3 text-white focus:outline-none focus:border-[#E74C3C] focus-visible:ring-2 focus-visible:ring-[#E74C3C] focus-visible:ring-offset-2 focus-visible:ring-offset-black"
+            className="w-full bg-black border border-white/20 px-4 py-3 text-white focus:outline-none focus:border-immortal-red focus-visible:ring-2 focus-visible:ring-immortal-red focus-visible:ring-offset-2 focus-visible:ring-offset-black"
             maxLength={40}
             autoComplete="tel"
             value={phone}
@@ -176,7 +192,7 @@ export function ContactForm() {
             id="contact-message"
             name="message"
             rows={5}
-            className="w-full bg-black border border-white/20 px-4 py-3 text-white focus:outline-none focus:border-[#E74C3C] focus-visible:ring-2 focus-visible:ring-[#E74C3C] focus-visible:ring-offset-2 focus-visible:ring-offset-black resize-none"
+            className="w-full bg-black border border-white/20 px-4 py-3 text-white focus:outline-none focus:border-immortal-red focus-visible:ring-2 focus-visible:ring-immortal-red focus-visible:ring-offset-2 focus-visible:ring-offset-black resize-none"
             required
             maxLength={4000}
             value={message}
@@ -186,7 +202,7 @@ export function ContactForm() {
         </div>
 
         {status === "error" ? (
-          <p className="text-sm text-[#E74C3C]" role="alert">
+          <p className="text-sm text-immortal-red" role="alert">
             {errorMessage}{" "}
             <a href="mailto:info@immortalathletics.co.uk" className="underline hover:text-white">
               info@immortalathletics.co.uk
@@ -197,7 +213,7 @@ export function ContactForm() {
         <button
           type="submit"
           disabled={status === "submitting"}
-          className="w-full bg-[#E74C3C] text-white px-8 py-4 uppercase tracking-wide hover:bg-[#C0392B] transition-colors disabled:opacity-60 disabled:cursor-not-allowed focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#E74C3C]"
+          className="w-full bg-immortal-red text-white px-8 py-4 uppercase tracking-wide hover:bg-immortal-red-dark transition-colors disabled:opacity-60 disabled:cursor-not-allowed focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-immortal-red"
         >
           {status === "submitting" ? "Sending…" : "Send enquiry"}
         </button>
