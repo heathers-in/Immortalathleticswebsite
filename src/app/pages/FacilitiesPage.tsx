@@ -21,7 +21,7 @@ export function FacilitiesPage() {
       <section className="py-24 px-4">
         <div className="max-w-7xl mx-auto">
           {/* The Platforms */}
-          <div className="mb-24">
+<div id="platforms" className="mb-24 scroll-mt-20">
 <p className="text-sm font-medium uppercase tracking-widest text-white/80 mb-3">Equipment</p>
             <div className="flex items-center gap-4 mb-8">
               <img src={logomarkImg} alt="" className="h-12 w-auto opacity-80" />
