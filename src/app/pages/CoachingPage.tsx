@@ -43,7 +43,7 @@ export function CoachingPage() {
               <div className="md:col-span-2 space-y-4 text-white/80">
                 <div>
                   <h2 className="text-4xl mb-2">Sai Asghari</h2>
-                  <p className="text-xl text-white/60">Head Coach & Founder</p>
+                  <p className="text-xl text-white/75">Head Coach & Founder</p>
                 </div>
                 <p className="text-lg leading-relaxed">
                   With over a decade of coaching experience and a technical foundation built on elite Turkish and Bulgarian weightlifting systems, Sai brings world-class methodology to every athlete he works with. As a multi-time English Championships competitor, he understands the demands of competition and trains athletes not just to lift, but to perform under pressure.
@@ -96,7 +96,7 @@ export function CoachingPage() {
 
               <a
                 href="/#contact"
-                className="block w-full text-center bg-[#E74C3C] text-white px-8 py-4 uppercase tracking-wide hover:bg-[#C0392B] transition-colors"
+                className="block w-full text-center bg-[#E74C3C] text-white px-8 py-4 uppercase tracking-wide hover:bg-[#C0392B] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#E74C3C]"
               >
                 Enquire About 1-2-1 Coaching
               </a>
@@ -123,35 +123,35 @@ export function CoachingPage() {
                     <Clipboard className="h-6 w-6 flex-shrink-0 mt-1 text-white/70" />
                     <div>
                       <p className="text-white mb-1">Initial Assessment</p>
-                      <p className="text-sm text-white/60">Video analysis, movement screening, and goal-setting call</p>
+                      <p className="text-sm text-white/75">Video analysis, movement screening, and goal-setting call</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
                     <Calendar className="h-6 w-6 flex-shrink-0 mt-1 text-white/70" />
                     <div>
                       <p className="text-white mb-1">Custom programme</p>
-                      <p className="text-sm text-white/60">Individualised training delivered weekly via app or spreadsheet</p>
+                      <p className="text-sm text-white/75">Individualised training delivered weekly via app or spreadsheet</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
                     <Video className="h-6 w-6 flex-shrink-0 mt-1 text-white/70" />
                     <div>
                       <p className="text-white mb-1">Video Review & Feedback</p>
-                      <p className="text-sm text-white/60">Submit videos, receive detailed technique feedback within 24 hours</p>
+                      <p className="text-sm text-white/75">Submit videos, receive detailed technique feedback within 24 hours</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
                     <MessageSquare className="h-6 w-6 flex-shrink-0 mt-1 text-white/70" />
                     <div>
                       <p className="text-white mb-1">Ongoing Communication</p>
-                      <p className="text-sm text-white/60">Direct access to your coach for questions and adjustments</p>
+                      <p className="text-sm text-white/75">Direct access to your coach for questions and adjustments</p>
                     </div>
                   </div>
                   <div className="flex gap-4">
                     <Target className="h-6 w-6 flex-shrink-0 mt-1 text-white/70" />
                     <div>
                       <p className="text-white mb-1">Progress Tracking & Adjustments</p>
-                      <p className="text-sm text-white/60">Regular check-ins and programme adjustments based on your progress</p>
+                      <p className="text-sm text-white/75">Regular check-ins and programme adjustments based on your progress</p>
                     </div>
                   </div>
                 </div>
@@ -171,7 +171,7 @@ export function CoachingPage() {
 
               <a
                 href="/#contact"
-                className="block w-full text-center bg-[#E74C3C] text-white px-8 py-4 uppercase tracking-wide hover:bg-[#C0392B] transition-colors"
+                className="block w-full text-center bg-[#E74C3C] text-white px-8 py-4 uppercase tracking-wide hover:bg-[#C0392B] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#E74C3C]"
               >
                 Enquire About Online Coaching
               </a>
@@ -180,13 +180,13 @@ export function CoachingPage() {
 
           {/* Bottom CTA */}
           <div className="mt-16 text-center border-t border-[#E74C3C]/20 pt-16">
-            <h3 className="text-3xl mb-6">Not sure which option is right for you?</h3>
+            <h2 className="text-3xl md:text-4xl mb-6 tracking-tight">Not sure which option is right for you?</h2>
             <p className="text-xl text-white/70 mb-8 max-w-2xl mx-auto">
               Book a free consultation call to discuss your goals, experience level, and training needs. We'll help you choose the coaching approach that fits your lifestyle and ambitions.
             </p>
             <a
               href="/#contact"
-              className="inline-block bg-[#E74C3C] text-white px-12 py-5 text-xl uppercase tracking-wide hover:bg-[#C0392B] transition-colors"
+              className="inline-block bg-[#E74C3C] text-white px-12 py-5 text-xl uppercase tracking-wide hover:bg-[#C0392B] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#E74C3C]"
             >
               Book Free Consultation
             </a>

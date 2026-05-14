@@ -168,7 +168,7 @@ export function PricesPage() {
                 href={NEW_HORIZON_KILO_SALES_PORTAL_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-[#E74C3C] text-white px-10 py-4 text-lg uppercase tracking-wide hover:bg-[#C0392B] transition-colors text-center w-full sm:w-auto"
+                className="inline-block bg-[#E74C3C] text-white px-10 py-4 text-lg uppercase tracking-wide hover:bg-[#C0392B] transition-colors text-center w-full sm:w-auto focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#E74C3C]"
               >
                 View plans and purchase on Kilo
               </a>
@@ -189,7 +189,7 @@ export function PricesPage() {
           <div className="text-center">
             <a
               href="/#contact"
-              className="inline-block bg-[#E74C3C] text-white px-12 py-5 text-xl uppercase tracking-wide hover:bg-[#C0392B] transition-colors"
+              className="inline-block bg-[#E74C3C] text-white px-12 py-5 text-xl uppercase tracking-wide hover:bg-[#C0392B] transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#E74C3C]"
             >
               Book a Taster Session
             </a>

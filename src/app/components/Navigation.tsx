@@ -69,7 +69,7 @@ export function Navigation() {
           <div className="flex items-center gap-4">
             <Link
               to="/#contact"
-              className="hidden sm:block bg-[#E74C3C] text-white px-6 py-3 hover:bg-[#C0392B] transition-colors uppercase tracking-wide text-sm"
+              className="hidden sm:block bg-[#E74C3C] text-white px-6 py-3 hover:bg-[#C0392B] transition-colors uppercase tracking-wide text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#E74C3C]"
             >
               Book a Taster Session
             </Link>
@@ -131,7 +131,7 @@ export function Navigation() {
               </Link>
               <Link
                 to="/#contact"
-                className="bg-[#E74C3C] text-white px-6 py-3 hover:bg-[#C0392B] transition-colors uppercase tracking-wide text-sm text-center mt-4"
+                className="bg-[#E74C3C] text-white px-6 py-3 hover:bg-[#C0392B] transition-colors uppercase tracking-wide text-sm text-center mt-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#E74C3C]"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Book a Taster Session

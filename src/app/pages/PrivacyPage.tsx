@@ -82,9 +82,9 @@ export function PrivacyPage() {
         <div className="max-w-3xl mx-auto">
           <div className="flex items-center gap-4 mb-8">
             <img src={logomarkImg} alt="" className="h-10 w-auto opacity-80" />
-            <p className="text-sm uppercase tracking-wide text-white/50">Legal</p>
+            <p className="text-sm uppercase tracking-wide text-white/70">Legal</p>
           </div>
-          <p className="text-sm text-white/50 mb-12">Last updated: {lastUpdated}</p>
+          <p className="text-sm text-white/70 mb-12">Last updated: {lastUpdated}</p>
 
           <div className="space-y-12 text-white/80 leading-relaxed">
             {sections.map((section) => (
