@@ -45,9 +45,24 @@ function PricingTierCard({ pkg }: { pkg: WeightliftingMembershipPackage }) {
 export function PricesPage() {
   const pricingFaqs = [
     {
-      question: "Can I pay per session instead of a monthly membership?",
+      question: "What's included in a membership?",
       answer:
-        "Yes. A single coached drop-in is £35 on Kilo, and a five-session pack is £85. If you train regularly, a monthly Basic, Intermediate, or Pro plan is usually better value. Purchase and validity rules are confirmed at checkout on Kilo.",
+        "All memberships include open gym access, personalised programming and progress tracking through the TrainHeroic app, and competition coaching for those who want it.",
+    },
+    {
+      question: "Can I pay per session instead of taking out a membership?",
+      answer:
+        "Yes, we offer drop-in rates for casual sessions. Monthly membership works out better value if you're training regularly and includes the full benefits above.",
+    },
+    {
+      question: "Is there a joining fee?",
+      answer:
+        "No joining fee. Your first month's membership is all you need to get started.",
+    },
+    {
+      question: "Can I freeze my membership if I need a break?",
+      answer:
+        "Yes. You can freeze your membership for up to three months per year, whether that's for holidays, injury recovery, or anything else life throws at you.",
     },
     {
       question: "How do I buy or renew a membership?",
@@ -55,24 +70,9 @@ export function PricesPage() {
         "Use the “Buy on Kilo” button on the card for the product you want, or open the main “View plans and purchase on Kilo” link to browse the full New Horizon portal. Checkout and renewals are handled on Kilo.",
     },
     {
-      question: "Is there a joining fee?",
-      answer:
-        "No joining fee. Your first month of membership is all you need to get started. We want Olympic weightlifting to stay accessible.",
-    },
-    {
       question: "Do you offer student or concession rates?",
       answer:
-        "Yes. Student weightlifting membership is £105 per month (2 coached classes and 2 weightlifting platform open gyms per week) with a valid student ID. For athletes aged 17 and under, the weightlifting student rate is £90 per month on the same training pattern. These student tiers are set up through the club, not on Kilo—contact us. We also offer concession rates for apprentices and members of the armed forces; ask when you book a taster or message us.",
-    },
-    {
-      question: "Can I freeze my membership if I need a break?",
-      answer:
-        "In most cases, yes. You can typically freeze for up to three months per year—for example holidays, injury recovery, or other commitments. Exact rules are confirmed at checkout on Kilo and with the club.",
-    },
-    {
-      question: "What’s included in the membership?",
-      answer:
-        "Each tier lists how many Immortal Athletics coached classes you get per week and how much weightlifting platform open gym you can use. Workshop discounts and programme support depend on your product—check the detail on Kilo before you pay.",
+        "Yes. Student weightlifting membership is £105 per month (2 coached classes and 2 weightlifting platform open gyms per week) with a valid student ID. For athletes aged 17 and under, the weightlifting student rate is £90 per month on the same training pattern. These student tiers are set up through the club, not on Kilo—contact us.",
     },
   ];
 

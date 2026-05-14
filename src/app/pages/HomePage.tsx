@@ -36,25 +36,30 @@ export function HomePage() {
 
   const faqs = [
     {
-      question: "Do I need experience to join?",
-      answer: "Not at all! We welcome athletes of all levels, from complete beginners to experienced competitors. Our coaches will meet you where you are and help you progress safely."
+      question: "Do I need any experience to join?",
+      answer:
+        "No experience needed at all. Our coaches will take you through everything from scratch using a stick or a lightweight technique bar. Olympic weightlifting is a technical sport and we're used to starting from zero. If you're unsure, book a taster session and come and see for yourself.",
     },
     {
-      question: "What should I bring to my first session?",
-      answer: "Wear comfortable athletic clothing and bring a water bottle. We recommend flat-soled shoes like lifting shoes or cross-trainers. Weightlifting shoes are beneficial but not required to start."
+      question: "What ages do you cater for?",
+      answer:
+        "We welcome athletes from age 11 through to masters (35–80+). Our Youth programme is specifically designed for 11–17 year olds, with coaching tailored to developing athletes. Masters athletes as well are very much part of the club; British Weightlifting has an active masters competition scene and we support athletes at every stage of life.",
     },
     {
-      question: "How often should I train?",
-      answer: "We recommend 2-3 sessions per week for beginners, progressing to 3-5 sessions as you advance. Our coaches will help you find the right balance for your goals and recovery needs."
+      question: "What happens in a weightlifting class?",
+      answer:
+        "Sessions are built around the two Olympic lifts, the snatch and the clean & jerk. You'll spend the majority of your time learning and developing these movements. As you progress, sessions will also include accessory work such as squats and pulls that support your lifting. Expect a structured, coached environment. This isn't a drop-in gym session.",
     },
     {
-      question: "Is Olympic weightlifting safe?",
-      answer: "When performed with proper technique and appropriate coaching, Olympic weightlifting is very safe. Our experienced coaches prioritise movement quality and progressive loading to minimise injury risk."
+      question: "What should I wear and bring?",
+      answer:
+        "Wear comfortable training clothes you can move freely in. Flat, firm-soled shoes are best. Dedicated weightlifting shoes are worth investing in eventually, but don't worry about that to start. Bring water and be ready to work hard.",
     },
     {
-      question: "What age groups do you work with?",
-      answer: "We work with athletes from age 12 upward. We have a specialised youth programme for ages 12-17, and adult classes for 18+. See our Youth page for more details on junior athletes."
-    }
+      question: "How do I get started?",
+      answer:
+        "Book a taster session. It's the best way to meet the coaches, see the club, and try a session with no commitment. You can book directly through the Schedule page.",
+    },
   ];
 
   return (
