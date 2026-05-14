@@ -13,16 +13,25 @@ export function Footer() {
             <img
               src={immortalLogoWhite}
               alt="Immortal Athletics"
+              width={3788}
+              height={1239}
+              decoding="async"
               className="h-12 w-auto opacity-90"
             />
             <img
               src={britishWeightliftingBadge}
               alt="British Weightlifting"
+              width={1200}
+              height={630}
+              decoding="async"
               className="h-16 w-auto opacity-80"
             />
             <img
               src={headerAlt}
               alt=""
+              width={550}
+              height={374}
+              decoding="async"
               className="h-12 w-auto opacity-80"
             />
           </div>

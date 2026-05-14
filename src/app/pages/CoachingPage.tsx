@@ -12,7 +12,10 @@ export function CoachingPage() {
           <ImageWithFallback
             src="https://images.unsplash.com/photo-1535202666646-1a0a3884bc34?w=1920"
             alt="Coaching session"
-            className="w-full h-full object-cover opacity-40"
+            width={1920}
+            height={1080}
+            fetchPriority="high"
+            className="h-full w-full object-cover opacity-40"
           />
         </div>
         <div className="relative z-10 text-center">
@@ -24,7 +27,14 @@ export function CoachingPage() {
       <section className="py-24 px-4">
         <div className="max-w-7xl mx-auto">
           <div className="mb-16 text-center max-w-3xl mx-auto">
-            <img src={logomarkImg} alt="" className="h-12 w-auto mx-auto mb-6 opacity-60" />
+            <img
+              src={logomarkImg}
+              alt=""
+              width={648}
+              height={1239}
+              decoding="async"
+              className="mx-auto mb-6 h-12 w-auto opacity-60"
+            />
             <p className="text-xl text-white/80 leading-relaxed">
               Whether you prefer in-person attention or the flexibility of remote programme delivery, Immortal Athletics offers elite coaching tailored to your goals, experience level, and schedule.
             </p>
@@ -37,7 +47,11 @@ export function CoachingPage() {
                 <img
                   src={coachSaiImg}
                   alt="Sai Asghari - Head Coach"
-                  className="w-full aspect-[3/4] object-cover"
+                  width={605}
+                  height={605}
+                  loading="lazy"
+                  decoding="async"
+                  className="aspect-[3/4] w-full object-cover"
                 />
               </div>
               <div className="md:col-span-2 space-y-4 text-white/80">

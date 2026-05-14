@@ -50,6 +50,35 @@ async function convertPngToJpeg(pngName, jpgName) {
   console.log(`${pngName} -> ${jpgName}: ${kb(before)} -> ${kb(after)}`);
 }
 
+async function writePublicHero() {
+  const src = path.join(importsDir, "hero_home_source.png");
+  const outDir = path.join(root, "public", "images");
+  if (!fs.existsSync(src)) {
+    console.warn("skip public hero (missing): hero_home_source.png");
+    return;
+  }
+  fs.mkdirSync(outDir, { recursive: true });
+  const webpPath = path.join(outDir, "hero.webp");
+  const jpgPath = path.join(outDir, "hero.jpg");
+  const meta = await sharp(src).rotate().metadata();
+  const W = meta.width ?? 0;
+  const H = meta.height ?? 0;
+  if (!W || !H) {
+    console.warn("skip public hero: could not read dimensions");
+    return;
+  }
+  const top = Math.round(H * 0.49);
+  const cropH = H - top;
+  const insetX = Math.round(W * 0.06);
+  const cropW = W - insetX * 2;
+  const base = sharp(src)
+    .rotate()
+    .extract({ left: insetX, top, width: cropW, height: cropH })
+    .resize({ width: 1920, height: 1080, fit: "cover", position: "centre" });
+  await base.clone().webp({ quality: 86 }).toFile(webpPath);
+  await base.clone().jpeg({ quality: 86, mozjpeg: true }).toFile(jpgPath);
+  console.log(`public/images/hero.webp + hero.jpg (from hero_home_source.png, elbows-down crop)`);
+}
 async function main() {
   console.log(`Optimizing images in ${importsDir} (max width ${maxWidth}px)\n`);
 
@@ -58,6 +87,8 @@ async function main() {
 
   await convertPngToJpeg("new_horizon_crossfit_gym_inside.png", "new_horizon_crossfit_gym_inside.jpg");
   await convertPngToJpeg("new_horizon_crossfit_coach_sai_asghari.png", "new_horizon_crossfit_coach_sai_asghari.jpg");
+
+  await writePublicHero();
 
   console.log("\nDone. Update any imports from .png to .jpg for converted files.");
 }

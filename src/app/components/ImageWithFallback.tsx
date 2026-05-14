@@ -5,7 +5,14 @@ interface ImageWithFallbackProps extends React.ImgHTMLAttributes<HTMLImageElemen
   alt: string;
 }
 
-export function ImageWithFallback({ src, alt, className, ...props }: ImageWithFallbackProps) {
+export function ImageWithFallback({
+  src,
+  alt,
+  className,
+  decoding = "async",
+  onError,
+  ...props
+}: ImageWithFallbackProps) {
   const [error, setError] = useState(false);
 
   if (error) {
@@ -21,7 +28,11 @@ export function ImageWithFallback({ src, alt, className, ...props }: ImageWithFa
       src={src}
       alt={alt}
       className={className}
-      onError={() => setError(true)}
+      decoding={decoding}
+      onError={(e) => {
+        setError(true);
+        onError?.(e);
+      }}
       {...props}
     />
   );

@@ -11,7 +11,10 @@ export function SchedulePage() {
           <ImageWithFallback
             src="https://images.unsplash.com/photo-1741478551825-e7e5c77a2247?w=1920"
             alt="Training schedule"
-            className="w-full h-full object-cover opacity-40"
+            width={1920}
+            height={1080}
+            fetchPriority="high"
+            className="h-full w-full object-cover opacity-40"
           />
         </div>
         <h1 className="relative z-10 text-6xl tracking-tight">Schedule</h1>
@@ -20,7 +23,14 @@ export function SchedulePage() {
       <section className="py-24 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="mb-12 text-center max-w-3xl mx-auto">
-            <img src={logomarkImg} alt="" className="h-12 w-auto mx-auto mb-6 opacity-60" />
+            <img
+              src={logomarkImg}
+              alt=""
+              width={648}
+              height={1239}
+              decoding="async"
+              className="mx-auto mb-6 h-12 w-auto opacity-60"
+            />
             <p className="text-xl text-white/80 leading-relaxed">
               Our training schedule is designed to accommodate athletes of all levels. Whether you're a beginner learning the fundamentals or an experienced lifter chasing competition totals, you'll find sessions that fit your needs and schedule.
             </p>

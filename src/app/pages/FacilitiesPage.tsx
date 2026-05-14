@@ -12,7 +12,11 @@ export function FacilitiesPage() {
           <img
             src={gymInsideImg}
             alt="New Horizon CrossFit facility"
-            className="w-full h-full object-cover opacity-50"
+            width={1920}
+            height={960}
+            fetchPriority="high"
+            decoding="async"
+            className="h-full w-full object-cover opacity-50"
           />
         </div>
         <h1 className="relative z-10 text-6xl tracking-tight">Facilities</h1>
@@ -24,7 +28,14 @@ export function FacilitiesPage() {
 <div id="platforms" className="mb-24 scroll-mt-20">
 <p className="text-sm font-medium uppercase tracking-widest text-white/80 mb-3">Equipment</p>
             <div className="flex items-center gap-4 mb-8">
-              <img src={logomarkImg} alt="" className="h-12 w-auto opacity-80" />
+              <img
+                src={logomarkImg}
+                alt=""
+                width={648}
+                height={1239}
+                decoding="async"
+                className="h-12 w-auto opacity-80"
+              />
               <h2 className="text-5xl tracking-tight">The Platforms</h2>
             </div>
             <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -50,17 +61,26 @@ export function FacilitiesPage() {
                 <ImageWithFallback
                   src="https://images.unsplash.com/photo-1741478551786-734ddc960779?w=600"
                   alt="Barbell and platform"
-                  className="w-full h-64 object-cover"
+                  width={600}
+                  height={400}
+                  loading="lazy"
+                  className="h-64 w-full object-cover"
                 />
                 <ImageWithFallback
                   src="https://images.unsplash.com/photo-1689514226730-c0fbca1345c9?w=600"
                   alt="Weightlifting equipment"
-                  className="w-full h-64 object-cover"
+                  width={600}
+                  height={400}
+                  loading="lazy"
+                  className="h-64 w-full object-cover"
                 />
                 <ImageWithFallback
                   src="https://images.unsplash.com/photo-1689514226984-15f849652eaa?w=600"
                   alt="Barbell closeup"
-                  className="w-full h-64 object-cover col-span-2"
+                  width={600}
+                  height={400}
+                  loading="lazy"
+                  className="col-span-2 h-64 w-full object-cover"
                 />
               </div>
             </div>
@@ -75,7 +95,11 @@ export function FacilitiesPage() {
                 <img
                   src={gymInsideImg}
                   alt="New Horizon CrossFit facility exterior"
-                  className="w-full h-[500px] object-cover"
+                  width={1920}
+                  height={960}
+                  loading="lazy"
+                  decoding="async"
+                  className="h-[500px] w-full object-cover"
                 />
               </div>
               <div className="space-y-6 text-lg text-white/80 leading-relaxed">

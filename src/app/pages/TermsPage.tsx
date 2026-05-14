@@ -55,7 +55,10 @@ export function TermsPage() {
           <ImageWithFallback
             src="https://images.unsplash.com/photo-1689514226730-c0fbca1345c9?w=1920"
             alt=""
-            className="w-full h-full object-cover opacity-40"
+            width={1920}
+            height={1080}
+            fetchPriority="high"
+            className="h-full w-full object-cover opacity-40"
           />
         </div>
         <div className="relative z-10 text-center px-4">
@@ -69,7 +72,14 @@ export function TermsPage() {
       <section className="py-16 md:py-24 px-4">
         <div className="max-w-3xl mx-auto">
           <div className="flex items-center gap-4 mb-12">
-            <img src={logomarkImg} alt="" className="h-10 w-auto opacity-80" />
+            <img
+              src={logomarkImg}
+              alt=""
+              width={648}
+              height={1239}
+              decoding="async"
+              className="h-10 w-auto opacity-80"
+            />
             <p className="text-sm uppercase tracking-wide text-white/50">Legal</p>
           </div>
 

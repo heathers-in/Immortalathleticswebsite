@@ -11,7 +11,11 @@ export function YouthPage() {
           <img
             src={youthPhoto}
             alt="Youth athlete training with coach"
-            className="w-full h-full object-cover opacity-50"
+            width={1920}
+            height={2880}
+            fetchPriority="high"
+            decoding="async"
+            className="h-full w-full object-cover opacity-50"
           />
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black" />
         </div>
@@ -26,7 +30,14 @@ export function YouthPage() {
           {/* Youth Programme Overview */}
           <div className="mb-24">
             <div className="flex items-center gap-4 mb-8">
-              <img src={logomarkImg} alt="" className="h-12 w-auto opacity-80" />
+              <img
+                src={logomarkImg}
+                alt=""
+                width={648}
+                height={1239}
+                decoding="async"
+                className="h-12 w-auto opacity-80"
+              />
               <h2 className="text-5xl tracking-tight">Youth Weightlifting Programme</h2>
             </div>
             <div className="space-y-12">
@@ -47,7 +58,11 @@ export function YouthPage() {
                   <img
                     src={youthPhoto}
                     alt="Coach Sai with young athlete"
-                    className="h-full w-full min-h-[18rem] md:min-h-[min(32rem,70vh)] object-cover rounded-lg"
+                    width={1920}
+                    height={2880}
+                    loading="lazy"
+                    decoding="async"
+                    className="h-full min-h-[18rem] w-full rounded-lg object-cover md:min-h-[min(32rem,70vh)]"
                   />
                 </div>
                 <div className="flex flex-col gap-8">

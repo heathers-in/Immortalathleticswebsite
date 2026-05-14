@@ -13,7 +13,14 @@ export function Navigation() {
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center gap-12">
             <Link to="/" className="flex items-center hover:opacity-80 transition-opacity">
-              <img src={logoImg} alt="Immortal Athletics" className="h-10 w-auto" />
+              <img
+                src={logoImg}
+                alt="Immortal Athletics"
+                width={3788}
+                height={1239}
+                decoding="async"
+                className="h-10 w-auto"
+              />
             </Link>
 
             <div className="hidden lg:flex items-center gap-8">

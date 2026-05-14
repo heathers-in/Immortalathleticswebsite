@@ -84,7 +84,10 @@ export function PricesPage() {
           <ImageWithFallback
             src="https://images.unsplash.com/photo-1689514226730-c0fbca1345c9?w=1920"
             alt="Weightlifting equipment"
-            className="w-full h-full object-cover opacity-40"
+            width={1920}
+            height={1080}
+            fetchPriority="high"
+            className="h-full w-full object-cover opacity-40"
           />
         </div>
         <h1 className="relative z-10 text-6xl tracking-tight">Prices & Membership</h1>
@@ -93,7 +96,14 @@ export function PricesPage() {
       <section className="py-24 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="mb-12 text-center max-w-3xl mx-auto">
-            <img src={logomarkImg} alt="" className="h-12 w-auto mx-auto mb-6 opacity-60" />
+            <img
+              src={logomarkImg}
+              alt=""
+              width={648}
+              height={1239}
+              decoding="async"
+              className="mx-auto mb-6 h-12 w-auto opacity-60"
+            />
             <p className="text-xl text-white/80 leading-relaxed">
               We offer flexible membership options to suit your training goals and schedule. All
               memberships include access to our world-class coaching, dedicated platforms, and
