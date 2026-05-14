@@ -42,7 +42,7 @@ export function CoachingPage() {
               </div>
               <div className="md:col-span-2 space-y-4 text-white/80">
                 <div>
-                  <h2 className="text-4xl mb-2">Sai Asghari</h2>
+<h2 className="text-5xl mb-2">Sai Asghari</h2>
                   <p className="text-xl text-white/75">Head Coach & Founder</p>
                 </div>
                 <p className="text-lg leading-relaxed">
