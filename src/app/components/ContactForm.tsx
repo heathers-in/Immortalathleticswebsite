@@ -133,7 +133,7 @@ export function ContactForm() {
           />
         </div>
         <div>
-          <label htmlFor="contact-email" className="block mb-2 uppercase tracking-wide text-sm">
+<label htmlFor="contact-email" className="block mb-2 uppercase tracking-wide text-sm text-white">
             Email
           </label>
           <input
