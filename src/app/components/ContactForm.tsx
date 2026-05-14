@@ -150,9 +150,9 @@ export function ContactForm() {
           />
         </div>
         <div>
-          <label htmlFor="contact-phone" className="block mb-2 uppercase tracking-wide text-sm">
-            Phone
-          </label>
+<label htmlFor="contact-phone" className="block mb-2 uppercase tracking-wide text-sm text-white">
+  Phone
+</label>
           <input
             type="tel"
             id="contact-phone"
