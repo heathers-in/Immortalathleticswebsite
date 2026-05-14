@@ -1,5 +1,5 @@
 import { ImageWithFallback } from "../components/ImageWithFallback";
-import coachSaiImg from "../../imports/new_horizon_crossfit_coach_sai_asghari.png";
+import coachSaiImg from "../../imports/new_horizon_crossfit_coach_sai_asghari.jpg";
 import logomarkImg from "../../imports/Immortal_Logomark_1C.png";
 import { User, Calendar, Target, Clipboard, Video, MessageSquare } from "lucide-react";
 

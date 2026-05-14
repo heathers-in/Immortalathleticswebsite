@@ -1,5 +1,5 @@
 import { ImageWithFallback } from "../components/ImageWithFallback";
-import gymInsideImg from "../../imports/new_horizon_crossfit_gym_inside.png";
+import gymInsideImg from "../../imports/new_horizon_crossfit_gym_inside.jpg";
 import { GoogleVenueMap } from "../components/GoogleVenueMap";
 import logomarkImg from "../../imports/Immortal_Logomark_1C.png";
 

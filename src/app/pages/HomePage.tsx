@@ -1,12 +1,12 @@
-import { Link } from "react-router";
 import { ImageWithFallback } from "../components/ImageWithFallback";
+import { ContactForm } from "../components/ContactForm";
 import { GoogleVenueMap } from "../components/GoogleVenueMap";
 import { GoogleReviewsPanel } from "../components/GoogleReviewsPanel";
 import { InstagramFeedSection } from "../components/InstagramFeedSection";
 import { ChevronDown } from "lucide-react";
 import { Accordion } from "../components/Accordion";
 import { useState, useEffect } from "react";
-import coachSaiImg from "../../imports/new_horizon_crossfit_coach_sai_asghari.png";
+import coachSaiImg from "../../imports/new_horizon_crossfit_coach_sai_asghari.jpg";
 import logomarkImg from "../../imports/Immortal_Logomark_1C.png";
 import athletePhoto from "../../imports/_A7_2913.jpg";
 import trainingPhoto1 from "../../imports/IMG_0110.jpg";
@@ -289,56 +289,7 @@ export function HomePage() {
             </div>
 
             <div>
-              <p className="text-sm text-white/60 mb-6 leading-relaxed">
-                Read our{" "}
-                <Link to="/privacy" className="text-[#E74C3C] hover:text-white transition-colors underline-offset-2 hover:underline">
-                  Privacy Policy
-                </Link>{" "}
-                for how we use personal data when you send a message through this form.
-              </p>
-              <form className="space-y-6">
-                <div>
-                  <label htmlFor="name" className="block mb-2 uppercase tracking-wide text-sm">Name</label>
-                  <input
-                    type="text"
-                    id="name"
-                    className="w-full bg-black border border-white/20 px-4 py-3 text-white focus:outline-none focus:border-[#E74C3C]"
-                    required
-                  />
-                </div>
-                <div>
-                  <label htmlFor="email" className="block mb-2 uppercase tracking-wide text-sm">Email</label>
-                  <input
-                    type="email"
-                    id="email"
-                    className="w-full bg-black border border-white/20 px-4 py-3 text-white focus:outline-none focus:border-[#E74C3C]"
-                    required
-                  />
-                </div>
-                <div>
-                  <label htmlFor="phone" className="block mb-2 uppercase tracking-wide text-sm">Phone</label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    className="w-full bg-black border border-white/20 px-4 py-3 text-white focus:outline-none focus:border-[#E74C3C]"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="message" className="block mb-2 uppercase tracking-wide text-sm">Message</label>
-                  <textarea
-                    id="message"
-                    rows={5}
-                    className="w-full bg-black border border-white/20 px-4 py-3 text-white focus:outline-none focus:border-[#E74C3C] resize-none"
-                    required
-                  ></textarea>
-                </div>
-                <button
-                  type="submit"
-                  className="w-full bg-[#E74C3C] text-white px-8 py-4 uppercase tracking-wide hover:bg-[#C0392B] transition-colors"
-                >
-                  Send Enquiry
-                </button>
-              </form>
+              <ContactForm />
             </div>
           </div>
         </div>
