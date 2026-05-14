@@ -106,7 +106,7 @@ export function ContactForm() {
 
   return (
     <div>
-      <p className="text-sm text-white/75 mb-6 leading-relaxed">
+<p className="text-sm text-white/90 mb-6 leading-relaxed">
         Read our{" "}
         <Link
           to="/privacy"
