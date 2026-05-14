@@ -6,6 +6,7 @@ import { PricesPage } from "./pages/PricesPage";
 import { FacilitiesPage } from "./pages/FacilitiesPage";
 import { CoachingPage } from "./pages/CoachingPage";
 import { YouthPage } from "./pages/YouthPage";
+import { TermsPage } from "./pages/TermsPage";
 
 export const router = createBrowserRouter([
   {
@@ -18,6 +19,7 @@ export const router = createBrowserRouter([
       { path: "facilities", Component: FacilitiesPage },
       { path: "coaching", Component: CoachingPage },
       { path: "youth", Component: YouthPage },
+      { path: "terms", Component: TermsPage },
     ],
   },
 ]);

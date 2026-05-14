@@ -1,5 +1,5 @@
-import { Instagram, Facebook, Mail, Phone } from "lucide-react";
-import logomarkImg from "../../imports/Immortal_Logomark_1C.png";
+import { Link } from "react-router";
+import { Instagram, Mail } from "lucide-react";
 import immortalLogoWhite from "../../imports/Immortal_Ath_V2_Logo_Full_BW_white.png";
 import britishWeightliftingBadge from "../../imports/badge-british_weight_lifting.png";
 import headerAlt from "../../imports/header-alt.png";
@@ -81,9 +81,9 @@ export function Footer() {
               <a href="#privacy" className="block hover:text-white transition-colors">
                 Privacy Policy
               </a>
-              <a href="#terms" className="block hover:text-white transition-colors">
-                Terms and Conditions
-              </a>
+              <Link to="/terms" className="block hover:text-white transition-colors">
+                Terms &amp; Conditions
+              </Link>
             </div>
           </div>
         </div>
