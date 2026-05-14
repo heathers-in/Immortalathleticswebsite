@@ -142,7 +142,7 @@ export function GoogleReviewsPanel() {
                     ) : null}
                   </div>
                   {r.relativeTime ? (
-                    <p className="text-xs text-white/45 mt-0.5">
+                    <p className="text-xs text-zinc-400 mt-0.5">
                       {r.relativeTime}
                     </p>
                   ) : null}

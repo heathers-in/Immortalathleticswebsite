@@ -25,6 +25,7 @@ export function GoogleVenueMap({ caption }: GoogleVenueMapProps) {
           className="text-sm text-immortal-red underline-offset-2 hover:underline"
         >
           Open in Google Maps
+          <span className="sr-only"> (opens in a new tab)</span>
         </a>
         {caption ? (
           <p className="text-xs text-white/50">{caption}</p>

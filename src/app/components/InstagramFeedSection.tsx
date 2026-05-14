@@ -47,7 +47,7 @@ export function InstagramFeedSection() {
   return (
     <div className="bg-black border border-white/10 p-8 md:p-12 rounded-lg">
       <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8">
-        <p className="text-sm text-white/50 uppercase tracking-wide">
+        <p className="text-sm text-zinc-300 uppercase tracking-wide">
           Latest from the club
         </p>
         <a

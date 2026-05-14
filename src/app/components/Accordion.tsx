@@ -29,7 +29,7 @@ export function Accordion({ items }: AccordionProps) {
             />
           </button>
           {openIndex === index && (
-            <div className="px-6 pb-6 text-white/70 leading-relaxed">
+            <div className="px-6 pb-6 text-zinc-200 leading-relaxed">
               {item.answer}
             </div>
           )}

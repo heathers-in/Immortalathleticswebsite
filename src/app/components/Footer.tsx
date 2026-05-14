@@ -73,8 +73,9 @@ export function Footer() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-white/70 transition-colors"
+                aria-label="Immortal Athletics on Instagram (opens in a new tab)"
               >
-                <Instagram className="h-6 w-6" />
+                <Instagram className="h-6 w-6" aria-hidden />
               </a>
             </div>
             <div className="mt-6 space-y-2 text-sm text-white/70">
