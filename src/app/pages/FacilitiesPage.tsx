@@ -69,7 +69,7 @@ export function FacilitiesPage() {
           {/* The Box */}
           <div className="mb-24 border-t border-[#E74C3C]/20 pt-24">
             <p className="text-sm font-medium uppercase tracking-widest text-white/70 mb-3">Venue</p>
-            <h2 className="text-4xl md:text-5xl font-semibold mb-8 tracking-tight">The Box</h2>
+<h2 className="text-5xl mb-8 tracking-tight">The Box</h2>
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
                 <img
