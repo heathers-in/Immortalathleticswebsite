@@ -123,7 +123,7 @@ export function ContactForm() {
             type="text"
             id="contact-name"
             name="name"
-            className="w-full bg-black border border-white/20 px-4 py-3 text-white focus:outline-none focus:border-[#E74C3C]"
+className="w-full bg-black border border-white/20 px-4 py-3 text-white focus:outline-none focus:border-[#E74C3C] focus-visible:ring-2 focus-visible:ring-[#E74C3C] focus-visible:ring-offset-2 focus-visible:ring-offset-black"
             required
             maxLength={120}
             autoComplete="name"
