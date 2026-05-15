@@ -287,11 +287,11 @@ export function KiloScheduleWidget() {
   }, []);
 
   return (
-    <div className="w-full overflow-x-auto">
+    <div className="w-full min-w-0">
       <div
         ref={hostRef}
         id="kilo-calendar-widget"
-        className="w-full min-h-[400px] min-w-[700px] rounded-md bg-white p-2 text-neutral-900 scheme-light"
+        className="w-full min-w-0 min-h-[400px] rounded-md bg-white p-2 text-neutral-900 scheme-light"
         data-gym-id="MTM4NWIyMGItZDUzMC00ZjE0LTg1NmItYmYzMzc1MWViMzk2"
         data-base-url="https://app.usekilo.com"
         data-sales-portal-slug="new-horizon-crossfit"

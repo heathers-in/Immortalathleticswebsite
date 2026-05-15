@@ -40,8 +40,8 @@ export function SchedulePage() {
             </p>
           </div>
 
-          <div className="bg-zinc-900 border border-white/10 rounded-lg p-8 md:p-12 mb-12">
-            <h2 className="text-2xl md:text-3xl tracking-tight text-center mb-8">
+          <div className="min-w-0 overflow-hidden rounded-lg border border-white/10 bg-zinc-900 p-4 sm:p-8 md:p-12 mb-12">
+            <h2 className="mb-6 text-center text-2xl tracking-tight md:mb-8 md:text-3xl">
               Class timetable
             </h2>
             <KiloScheduleWidget />
