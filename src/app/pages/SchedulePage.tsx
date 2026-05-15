@@ -1,8 +1,8 @@
-import { ImageWithFallback } from "../components/ImageWithFallback";
 import { PageHeroGradients } from "../components/PageHeroGradients";
 import { KiloScheduleWidget } from "../components/KiloScheduleWidget";
 import { BOOK_TASTER_SESSION_URL } from "../data/weightliftingMembershipPackages";
 import logomarkImg from "../../imports/Immortal_Logomark_1C.png";
+import scheduleHeroImg from "../../imports/IMG_0110.jpg";
 
 export function SchedulePage() {
   return (
@@ -10,12 +10,13 @@ export function SchedulePage() {
       {/* Hero */}
       <section className="relative flex h-[40vh] items-center justify-center">
         <div className="absolute inset-0 overflow-hidden">
-          <ImageWithFallback
-            src="https://images.unsplash.com/photo-1741478551825-e7e5c77a2247?w=1920"
-            alt="Training schedule"
+          <img
+            src={scheduleHeroImg}
+            alt="Athletes training at Immortal Athletics, Hatfield"
             width={1920}
-            height={1080}
+            height={1280}
             fetchPriority="high"
+            decoding="async"
             className="h-full w-full object-cover"
           />
           <PageHeroGradients />
@@ -37,9 +38,10 @@ export function SchedulePage() {
               className="mx-auto mb-6 h-12 w-auto opacity-60"
             />
             <p className="text-xl text-white/80 leading-relaxed">
-              Our training schedule is designed to accommodate athletes of all levels. Whether you're a beginner learning the fundamentals or an experienced lifter chasing competition totals, you'll find sessions that fit your needs and schedule.
+              Our Olympic weightlifting timetable is designed for athletes of all levels. Whether you are learning the fundamentals or chasing competition totals, you will find coached sessions and open platform times that fit your week.
             </p>
           </div>
+
 
           <div className="min-w-0 overflow-hidden rounded-lg border border-white/10 bg-zinc-900 p-4 sm:p-8 md:p-12 mb-12">
             <h2 className="mb-6 text-center text-2xl tracking-tight md:mb-8 md:text-3xl">

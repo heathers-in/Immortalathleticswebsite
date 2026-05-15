@@ -1,7 +1,7 @@
 import { Link } from "react-router";
-import { ImageWithFallback } from "../components/ImageWithFallback";
 import { PageHeroGradients } from "../components/PageHeroGradients";
 import logomarkImg from "../../imports/Immortal_Logomark_1C.png";
+import legalHeroImg from "../../imports/new_horizon_crossfit_gym_inside.jpg";
 
 const sections: { title: string; paragraphs: string[] }[] = [
   {
@@ -65,12 +65,14 @@ export function PrivacyPage() {
     <div className="bg-black text-white">
       <section className="relative flex h-[40vh] items-center justify-center">
         <div className="absolute inset-0 overflow-hidden">
-          <ImageWithFallback
-            src="https://images.unsplash.com/photo-1689514226730-c0fbca1345c9?w=1920"
+          <img
+            src={legalHeroImg}
             alt=""
             width={1920}
-            height={1080}
+            height={960}
             fetchPriority="high"
+            decoding="async"
+            aria-hidden
             className="h-full w-full object-cover"
           />
           <PageHeroGradients />

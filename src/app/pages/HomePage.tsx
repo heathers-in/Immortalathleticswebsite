@@ -150,6 +150,9 @@ export function HomePage() {
           <h1 className="mx-auto mb-5 max-w-[min(22ch,100%)] text-5xl tracking-tighter [text-shadow:0_1px_2px_rgb(0_0_0/0.9),0_8px_32px_rgb(0_0_0/0.55)] contrast-more:[text-shadow:0_2px_4px_rgb(0_0_0/1),0_12px_40px_rgb(0_0_0/0.75)] md:mb-6 md:text-7xl">
             IMMORTAL ATHLETICS
           </h1>
+          <p className="mb-2 text-lg text-white/85 [text-shadow:0_1px_2px_rgb(0_0_0/0.85),0_6px_24px_rgb(0_0_0/0.5)] md:text-xl">
+            Olympic weightlifting club · Welwyn Hatfield, Hertfordshire
+          </p>
           <p className="mb-6 text-xl text-white/90 [text-shadow:0_1px_2px_rgb(0_0_0/0.85),0_6px_24px_rgb(0_0_0/0.5)] contrast-more:text-white md:mb-8 md:text-2xl">
             Build Strength. Build Legacy.
           </p>

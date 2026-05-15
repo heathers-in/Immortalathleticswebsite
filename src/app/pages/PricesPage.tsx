@@ -1,8 +1,8 @@
 import { ContactLink } from "../components/ContactLink";
-import { ImageWithFallback } from "../components/ImageWithFallback";
 import { PageHeroGradients } from "../components/PageHeroGradients";
 import { Accordion } from "../components/Accordion";
 import logomarkImg from "../../imports/Immortal_Logomark_1C.png";
+import pricesHeroImg from "../../imports/new_horizon_crossfit_gym_inside.jpg";
 import {
   BOOK_TASTER_SESSION_URL,
   NEW_HORIZON_KILO_SALES_PORTAL_URL,
@@ -84,12 +84,13 @@ export function PricesPage() {
       {/* Hero */}
       <section className="relative flex h-[40vh] items-center justify-center">
         <div className="absolute inset-0 overflow-hidden">
-          <ImageWithFallback
-            src="https://images.unsplash.com/photo-1689514226730-c0fbca1345c9?w=1920"
-            alt="Weightlifting equipment"
+          <img
+            src={pricesHeroImg}
+            alt="Olympic weightlifting platforms at Immortal Athletics, Hatfield"
             width={1920}
-            height={1080}
+            height={960}
             fetchPriority="high"
+            decoding="async"
             className="h-full w-full object-cover"
           />
           <PageHeroGradients />
@@ -111,9 +112,7 @@ export function PricesPage() {
               className="mx-auto mb-6 h-12 w-auto opacity-60"
             />
             <p className="text-xl text-white/80 leading-relaxed">
-              We offer flexible membership options to suit your training goals and schedule. All
-              memberships include access to our world-class coaching, dedicated platforms, and
-              supportive community.
+              We offer flexible weightlifting membership options to suit your training goals and schedule. All memberships include access to our coaching, dedicated Olympic platforms, and supportive club community.
             </p>
           </div>
 

@@ -26,7 +26,7 @@ export function YouthPage() {
             Youth Programme
           </h1>
           <p className="text-xl text-white/90 [text-shadow:0_1px_2px_rgb(0_0_0/0.85),0_6px_24px_rgb(0_0_0/0.5)]">
-            Building strong, confident young athletes
+            Junior Olympic weightlifting in Welwyn Hatfield for ages 11–18
           </p>
         </div>
       </section>

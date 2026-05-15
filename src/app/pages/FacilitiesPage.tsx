@@ -1,6 +1,8 @@
-import { ImageWithFallback } from "../components/ImageWithFallback";
 import { PageHeroGradients } from "../components/PageHeroGradients";
 import gymInsideImg from "../../imports/new_horizon_crossfit_gym_inside.jpg";
+import platformPhoto1 from "../../imports/IMG_0110.jpg";
+import platformPhoto2 from "../../imports/IMG-20240922-WA0045__1_.jpg";
+import platformPhoto3 from "../../imports/_A7_2913.jpg";
 import { GoogleVenueMap } from "../components/GoogleVenueMap";
 import logomarkImg from "../../imports/Immortal_Logomark_1C.png";
 
@@ -62,28 +64,31 @@ export function FacilitiesPage() {
                 </p>
               </div>
               <div className="grid grid-cols-2 gap-4">
-                <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1741478551786-734ddc960779?w=600"
-                  alt="Barbell and platform"
+                <img
+                  src={platformPhoto1}
+                  alt="Barbell and Olympic weightlifting platform"
                   width={600}
                   height={400}
                   loading="lazy"
+                  decoding="async"
                   className="h-64 w-full object-cover"
                 />
-                <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1689514226730-c0fbca1345c9?w=600"
-                  alt="Weightlifting equipment"
+                <img
+                  src={platformPhoto2}
+                  alt="Weightlifting equipment at Immortal Athletics"
                   width={600}
                   height={400}
                   loading="lazy"
+                  decoding="async"
                   className="h-64 w-full object-cover"
                 />
-                <ImageWithFallback
-                  src="https://images.unsplash.com/photo-1689514226984-15f849652eaa?w=600"
-                  alt="Barbell closeup"
+                <img
+                  src={platformPhoto3}
+                  alt="Athlete lifting at Immortal Athletics, Hatfield"
                   width={600}
                   height={400}
                   loading="lazy"
+                  decoding="async"
                   className="col-span-2 h-64 w-full object-cover"
                 />
               </div>

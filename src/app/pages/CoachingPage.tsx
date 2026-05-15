@@ -1,5 +1,4 @@
 import { ContactLink } from "../components/ContactLink";
-import { ImageWithFallback } from "../components/ImageWithFallback";
 import { PageHeroGradients } from "../components/PageHeroGradients";
 import coachSaiImg from "../../imports/new_horizon_crossfit_coach_sai_asghari.jpg";
 import logomarkImg from "../../imports/Immortal_Logomark_1C.png";
@@ -11,12 +10,13 @@ export function CoachingPage() {
       {/* Hero */}
       <section className="relative flex h-[40vh] items-center justify-center">
         <div className="absolute inset-0 overflow-hidden">
-          <ImageWithFallback
-            src="https://images.unsplash.com/photo-1535202666646-1a0a3884bc34?w=1920"
-            alt="Coaching session"
+          <img
+            src={coachSaiImg}
+            alt="Olympic weightlifting coaching session at Immortal Athletics, Hatfield"
             width={1920}
-            height={1080}
+            height={1280}
             fetchPriority="high"
+            decoding="async"
             className="h-full w-full object-cover"
           />
           <PageHeroGradients />
@@ -43,7 +43,7 @@ export function CoachingPage() {
               className="mx-auto mb-6 h-12 w-auto opacity-60"
             />
             <p className="text-xl text-white/80 leading-relaxed">
-              Whether you prefer in-person attention or the flexibility of remote programme delivery, Immortal Athletics offers elite coaching tailored to your goals, experience level, and schedule.
+              Whether you prefer in-person attention at our Welwyn Hatfield gym or the flexibility of remote programme delivery, Immortal Athletics offers Olympic weightlifting coaching tailored to your goals, experience level, and schedule.
             </p>
           </div>
 
