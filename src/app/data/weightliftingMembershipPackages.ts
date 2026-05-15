@@ -7,6 +7,10 @@
 export const NEW_HORIZON_KILO_SALES_PORTAL_URL =
   "https://app.usekilo.com/sales-portal/new-horizon-crossfit/";
 
+/** Drop-in / taster session booking on Kilo */
+export const BOOK_TASTER_SESSION_URL =
+  "https://app.usekilo.com/sales-portal/new-horizon-crossfit/041b0f04-46b7-44f9-8c45-644f65aa97e2/d914ee10-80e5-4dc7-a1f1-fc012d6403e2";
+
 export type WeightliftingMembershipPackage = {
   id: string;
   name: string;
@@ -66,8 +70,7 @@ export const WEIGHTLIFTING_PASS_PACKAGES: WeightliftingMembershipPackage[] = [
     name: "Drop-in (coached session)",
     priceLabel: "£35",
     billingNote: "Single session · time-based pass on Kilo",
-    checkoutUrl:
-      "https://app.usekilo.com/sales-portal/new-horizon-crossfit/041b0f04-46b7-44f9-8c45-644f65aa97e2/d914ee10-80e5-4dc7-a1f1-fc012d6403e2",
+    checkoutUrl: BOOK_TASTER_SESSION_URL,
     bullets: ["One coached Immortal Athletics weightlifting class"],
   },
   {

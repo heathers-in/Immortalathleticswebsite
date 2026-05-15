@@ -1,5 +1,6 @@
 import { Accordion } from "../components/Accordion";
 import { PageHeroGradients } from "../components/PageHeroGradients";
+import { BOOK_TASTER_SESSION_URL } from "../data/weightliftingMembershipPackages";
 import { lazy, Suspense, useEffect, useState } from "react";
 import coachSaiImg from "../../imports/new_horizon_crossfit_coach_sai_asghari.jpg";
 import logomarkImg from "../../imports/Immortal_Logomark_1C.png";
@@ -153,7 +154,9 @@ export function HomePage() {
             Build Strength. Build Legacy.
           </p>
           <a
-            href="#contact"
+            href={BOOK_TASTER_SESSION_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-block bg-immortal-red px-10 py-4 text-lg uppercase tracking-wide text-white shadow-lg shadow-black/40 transition-colors hover:bg-immortal-red-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-immortal-red md:px-12 md:py-4 md:text-xl"
           >
             Book a Taster Session
@@ -337,7 +340,9 @@ export function HomePage() {
 
           <div className="text-center">
             <a
-              href="#contact"
+              href={BOOK_TASTER_SESSION_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-immortal-red px-12 py-5 text-xl uppercase tracking-wide text-white transition-colors hover:bg-immortal-red-dark focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-immortal-red"
             >
               Book a Taster Session
@@ -366,7 +371,7 @@ export function HomePage() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="bg-zinc-950 px-4 py-24">
+      <section id="contact" className="scroll-mt-20 bg-zinc-950 px-4 py-24">
         <div className="mx-auto max-w-7xl">
           <h2 className="mb-12 text-center text-5xl tracking-tight">Get in Touch</h2>
 

@@ -1,3 +1,4 @@
+import { ContactLink } from "../components/ContactLink";
 import { PageHeroGradients } from "../components/PageHeroGradients";
 import logomarkImg from "../../imports/Immortal_Logomark_1C.png";
 import youthPhoto from "../../imports/_A7_2924.jpg";
@@ -117,9 +118,9 @@ export function YouthPage() {
                     <div className="pt-6 border-t border-white/10">
                       <p className="text-sm text-white/60">
                         This tier is arranged through the club (not on Kilo).{" "}
-                        <a href="/#contact" className="text-immortal-red hover:underline">
+                        <ContactLink className="text-immortal-red hover:underline">
                           Contact us
-                        </a>{" "}
+                        </ContactLink>{" "}
                         to join or ask about options for younger athletes.
                       </p>
                     </div>
@@ -230,12 +231,11 @@ export function YouthPage() {
 
           {/* Bottom CTA */}
           <div className="mt-16 text-center">
-            <a
-              href="/#contact"
+            <ContactLink
               className="inline-block bg-immortal-red text-white px-12 py-5 text-xl uppercase tracking-wide hover:bg-immortal-red-dark transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-immortal-red"
             >
-              Book a Taster Session
-            </a>
+              Contact Us
+            </ContactLink>
           </div>
         </div>
       </section>

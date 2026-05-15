@@ -2,6 +2,8 @@ import { Link } from "react-router";
 import { useState } from "react";
 import { ChevronDown, Menu, X } from "lucide-react";
 import logoImg from "../../imports/Immortal_Ath_V2_Logo_Full_2C_white.png";
+import { ContactLink } from "./ContactLink";
+import { BOOK_TASTER_SESSION_URL } from "../data/weightliftingMembershipPackages";
 
 export function Navigation() {
   const [isTrainingOpen, setIsTrainingOpen] = useState(false);
@@ -67,19 +69,21 @@ export function Navigation() {
                 Youth
               </Link>
 
-              <Link to="/#contact" className="hover:text-white/70 transition-colors">
+              <ContactLink className="hover:text-white/70 transition-colors">
                 Contact
-              </Link>
+              </ContactLink>
             </div>
           </div>
 
           <div className="flex items-center gap-4">
-            <Link
-              to="/#contact"
+            <a
+              href={BOOK_TASTER_SESSION_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="hidden sm:block bg-immortal-red text-white px-6 py-3 hover:bg-immortal-red-dark transition-colors uppercase tracking-wide text-sm focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-immortal-red"
             >
               Book a Taster Session
-            </Link>
+            </a>
 
             <button
               type="button"
@@ -133,20 +137,21 @@ export function Navigation() {
               >
                 Youth
               </Link>
-              <Link
-                to="/#contact"
+              <ContactLink
                 className="hover:text-white/70 transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Contact
-              </Link>
-              <Link
-                to="/#contact"
+              </ContactLink>
+              <a
+                href={BOOK_TASTER_SESSION_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="bg-immortal-red text-white px-6 py-3 hover:bg-immortal-red-dark transition-colors uppercase tracking-wide text-sm text-center mt-4 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-immortal-red"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Book a Taster Session
-              </Link>
+              </a>
             </div>
           </div>
         )}

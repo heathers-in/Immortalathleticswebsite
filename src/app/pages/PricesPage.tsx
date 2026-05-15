@@ -1,8 +1,10 @@
+import { ContactLink } from "../components/ContactLink";
 import { ImageWithFallback } from "../components/ImageWithFallback";
 import { PageHeroGradients } from "../components/PageHeroGradients";
 import { Accordion } from "../components/Accordion";
 import logomarkImg from "../../imports/Immortal_Logomark_1C.png";
 import {
+  BOOK_TASTER_SESSION_URL,
   NEW_HORIZON_KILO_SALES_PORTAL_URL,
   STUDENT_MEMBERSHIPS_OFFLINE_NOTE,
   STUDENT_WEIGHTLIFTING_OFFERS,
@@ -168,12 +170,11 @@ export function PricesPage() {
                 {STUDENT_MEMBERSHIPS_OFFLINE_NOTE}
               </p>
               <div className="text-center">
-                <a
-                  href="/#contact"
+                <ContactLink
                   className="inline-block border border-white/30 text-white px-8 py-3 text-sm uppercase tracking-wide hover:border-immortal-red hover:text-immortal-red transition-colors"
                 >
                   Contact us for details
-                </a>
+                </ContactLink>
               </div>
             </div>
 
@@ -202,7 +203,9 @@ export function PricesPage() {
 
           <div className="text-center">
             <a
-              href="/#contact"
+              href={BOOK_TASTER_SESSION_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-immortal-red text-white px-12 py-5 text-xl uppercase tracking-wide hover:bg-immortal-red-dark transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-immortal-red"
             >
               Book a Taster Session

@@ -1,6 +1,7 @@
 import { ImageWithFallback } from "../components/ImageWithFallback";
 import { PageHeroGradients } from "../components/PageHeroGradients";
 import { KiloScheduleWidget } from "../components/KiloScheduleWidget";
+import { BOOK_TASTER_SESSION_URL } from "../data/weightliftingMembershipPackages";
 import logomarkImg from "../../imports/Immortal_Logomark_1C.png";
 
 export function SchedulePage() {
@@ -49,7 +50,9 @@ export function SchedulePage() {
 
           <div className="text-center">
             <a
-              href="/#contact"
+              href={BOOK_TASTER_SESSION_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-immortal-red text-white px-12 py-5 text-xl uppercase tracking-wide hover:bg-immortal-red-dark transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-immortal-red"
             >
               Book a Taster Session

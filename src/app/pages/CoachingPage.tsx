@@ -1,3 +1,4 @@
+import { ContactLink } from "../components/ContactLink";
 import { ImageWithFallback } from "../components/ImageWithFallback";
 import { PageHeroGradients } from "../components/PageHeroGradients";
 import coachSaiImg from "../../imports/new_horizon_crossfit_coach_sai_asghari.jpg";
@@ -114,12 +115,11 @@ export function CoachingPage() {
                 </ul>
               </div>
 
-              <a
-                href="/#contact"
+              <ContactLink
                 className="block w-full text-center bg-immortal-red text-white px-8 py-4 uppercase tracking-wide hover:bg-immortal-red-dark transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-immortal-red"
               >
                 Enquire About 1-2-1 Coaching
-              </a>
+              </ContactLink>
             </div>
 
             {/* Online Coaching */}
@@ -189,12 +189,11 @@ export function CoachingPage() {
                 </ul>
               </div>
 
-              <a
-                href="/#contact"
+              <ContactLink
                 className="block w-full text-center bg-immortal-red text-white px-8 py-4 uppercase tracking-wide hover:bg-immortal-red-dark transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-immortal-red"
               >
                 Enquire About Online Coaching
-              </a>
+              </ContactLink>
             </div>
           </div>
 
@@ -202,14 +201,13 @@ export function CoachingPage() {
           <div className="mt-16 text-center border-t border-immortal-red/20 pt-16">
             <h2 className="text-3xl md:text-4xl mb-6 tracking-tight">Not sure which option is right for you?</h2>
             <p className="text-xl text-white/70 mb-8 max-w-2xl mx-auto">
-              Book a free consultation call to discuss your goals, experience level, and training needs. We'll help you choose the coaching approach that fits your lifestyle and ambitions.
+              Get in touch to discuss your goals, experience level, and training needs. We'll help you choose the coaching approach that fits your lifestyle and ambitions.
             </p>
-            <a
-              href="/#contact"
+            <ContactLink
               className="inline-block bg-immortal-red text-white px-12 py-5 text-xl uppercase tracking-wide hover:bg-immortal-red-dark transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-immortal-red"
             >
-              Book Free Consultation
-            </a>
+              Contact Us
+            </ContactLink>
           </div>
         </div>
       </section>
