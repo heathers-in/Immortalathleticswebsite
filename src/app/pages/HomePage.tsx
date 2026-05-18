@@ -117,7 +117,7 @@ export function HomePage() {
   return (
     <div className="bg-black text-white">
       {/* Hero Section */}
-      <section className="relative flex min-h-[300px] h-[48svh] max-h-[520px] w-full flex-col items-center justify-start overflow-visible px-0 pt-8 pb-10 md:h-[42svh] md:max-h-[560px] md:pt-10 md:pb-12">
+      <section className="relative flex min-h-[300px] h-[48svh] max-h-[520px] w-full flex-col items-center justify-start overflow-visible px-0 pt-8 pb-16 md:h-[42svh] md:max-h-[560px] md:pt-10 md:pb-20">
         <div className="absolute inset-0 overflow-hidden">
           <picture className="block h-full w-full">
             <source srcSet="/images/hero.webp" type="image/webp" />
@@ -168,7 +168,7 @@ export function HomePage() {
       </section>
 
       {/* About & Coaches Section */}
-      <section className="px-4 py-24">
+      <section className="px-4 pt-28 pb-24 md:pt-32">
         <div className="mx-auto max-w-7xl">
           <div className="mb-24 grid items-center gap-16 md:grid-cols-2">
             <div>
