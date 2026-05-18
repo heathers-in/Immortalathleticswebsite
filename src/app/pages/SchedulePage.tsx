@@ -2,7 +2,7 @@ import { PageHeroGradients } from "../components/PageHeroGradients";
 import { KiloScheduleWidget } from "../components/KiloScheduleWidget";
 import { BOOK_TASTER_SESSION_URL } from "../data/weightliftingMembershipPackages";
 import logomarkImg from "../../imports/Immortal_Logomark_1C.png";
-import scheduleHeroImg from "../../imports/IMG_0110.jpg";
+import scheduleHeroImg from "../../imports/dsc_9667_lifting_stations.png";
 
 export function SchedulePage() {
   return (
@@ -12,9 +12,9 @@ export function SchedulePage() {
         <div className="absolute inset-0 overflow-hidden">
           <img
             src={scheduleHeroImg}
-            alt="Athletes training at Immortal Athletics, Hatfield"
-            width={1920}
-            height={1280}
+            alt="Olympic weightlifting platforms and racks at Immortal Athletics, Hatfield"
+            width={1024}
+            height={678}
             fetchPriority="high"
             decoding="async"
             className="h-full w-full object-cover"

@@ -2,7 +2,7 @@ import { ContactLink } from "../components/ContactLink";
 import { PageHeroGradients } from "../components/PageHeroGradients";
 import { Accordion } from "../components/Accordion";
 import logomarkImg from "../../imports/Immortal_Logomark_1C.png";
-import pricesHeroImg from "../../imports/new_horizon_crossfit_gym_inside.jpg";
+import pricesHeroImg from "../../imports/dsc_9646_gym_wide.png";
 import {
   BOOK_TASTER_SESSION_URL,
   NEW_HORIZON_KILO_SALES_PORTAL_URL,
@@ -86,9 +86,9 @@ export function PricesPage() {
         <div className="absolute inset-0 overflow-hidden">
           <img
             src={pricesHeroImg}
-            alt="Olympic weightlifting platforms at Immortal Athletics, Hatfield"
-            width={1920}
-            height={960}
+            alt="Olympic weightlifting area at Immortal Athletics, Hatfield"
+            width={1024}
+            height={678}
             fetchPriority="high"
             decoding="async"
             className="h-full w-full object-cover"

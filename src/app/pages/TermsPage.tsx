@@ -1,6 +1,6 @@
 import { PageHeroGradients } from "../components/PageHeroGradients";
 import logomarkImg from "../../imports/Immortal_Logomark_1C.png";
-import legalHeroImg from "../../imports/new_horizon_crossfit_gym_inside.jpg";
+import legalHeroImg from "../../imports/dsc_9676_barbells.png";
 
 const sections = [
   {
@@ -56,8 +56,8 @@ export function TermsPage() {
           <img
             src={legalHeroImg}
             alt=""
-            width={1920}
-            height={960}
+            width={1024}
+            height={678}
             fetchPriority="high"
             decoding="async"
             aria-hidden

@@ -1,5 +1,6 @@
 import { ContactLink } from "../components/ContactLink";
 import { PageHeroGradients } from "../components/PageHeroGradients";
+import coachingHeroImg from "../../imports/dsc_9662_platform_shoes.png";
 import coachSaiImg from "../../imports/new_horizon_crossfit_coach_sai_asghari.jpg";
 import logomarkImg from "../../imports/Immortal_Logomark_1C.png";
 import { User, Calendar, Target, Clipboard, Video, MessageSquare } from "lucide-react";
@@ -11,10 +12,10 @@ export function CoachingPage() {
       <section className="relative flex h-[40vh] items-center justify-center">
         <div className="absolute inset-0 overflow-hidden">
           <img
-            src={coachSaiImg}
-            alt="Olympic weightlifting coaching session at Immortal Athletics, Hatfield"
-            width={1920}
-            height={1280}
+            src={coachingHeroImg}
+            alt="Immortal Athletics Olympic weightlifting platform"
+            width={1024}
+            height={678}
             fetchPriority="high"
             decoding="async"
             className="h-full w-full object-cover"

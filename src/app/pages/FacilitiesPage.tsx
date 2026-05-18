@@ -1,8 +1,9 @@
 import { PageHeroGradients } from "../components/PageHeroGradients";
+import facilitiesHeroImg from "../../imports/dsc_9657_immortal_platform.png";
 import gymInsideImg from "../../imports/new_horizon_crossfit_gym_inside.jpg";
-import platformPhoto1 from "../../imports/IMG_0110.jpg";
-import platformPhoto2 from "../../imports/IMG-20240922-WA0045__1_.jpg";
-import platformPhoto3 from "../../imports/_A7_2913.jpg";
+import galleryJerkBlocksImg from "../../imports/dsc_9646_gym_wide.png";
+import galleryPlatformsWideImg from "../../imports/dsc_9667_lifting_stations.png";
+import platformBarbellsImg from "../../imports/dsc_9676_barbells.png";
 import { GoogleVenueMap } from "../components/GoogleVenueMap";
 import logomarkImg from "../../imports/Immortal_Logomark_1C.png";
 
@@ -13,10 +14,10 @@ export function FacilitiesPage() {
       <section className="relative flex h-[40vh] items-center justify-center">
         <div className="absolute inset-0 overflow-hidden">
           <img
-            src={gymInsideImg}
-            alt="New Horizon CrossFit facility"
-            width={1920}
-            height={960}
+            src={facilitiesHeroImg}
+            alt="Immortal Athletics branded Olympic weightlifting platform"
+            width={1024}
+            height={678}
             fetchPriority="high"
             decoding="async"
             className="h-full w-full object-cover"
@@ -65,28 +66,28 @@ export function FacilitiesPage() {
               </div>
               <div className="grid grid-cols-2 gap-4">
                 <img
-                  src={platformPhoto1}
-                  alt="Barbell and Olympic weightlifting platform"
-                  width={600}
-                  height={400}
+                  src={galleryJerkBlocksImg}
+                  alt="Jerk blocks and Olympic weightlifting area at New Horizon CrossFit"
+                  width={1024}
+                  height={678}
                   loading="lazy"
                   decoding="async"
                   className="h-64 w-full object-cover"
                 />
                 <img
-                  src={platformPhoto2}
-                  alt="Weightlifting equipment at Immortal Athletics"
-                  width={600}
-                  height={400}
+                  src={galleryPlatformsWideImg}
+                  alt="Olympic weightlifting platforms and racks at Immortal Athletics"
+                  width={1024}
+                  height={678}
                   loading="lazy"
                   decoding="async"
                   className="h-64 w-full object-cover"
                 />
                 <img
-                  src={platformPhoto3}
-                  alt="Athlete lifting at Immortal Athletics, Hatfield"
-                  width={600}
-                  height={400}
+                  src={platformBarbellsImg}
+                  alt="Competition barbells at Immortal Athletics"
+                  width={1024}
+                  height={678}
                   loading="lazy"
                   decoding="async"
                   className="col-span-2 h-64 w-full object-cover"

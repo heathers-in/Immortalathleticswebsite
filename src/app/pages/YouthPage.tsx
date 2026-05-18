@@ -1,7 +1,8 @@
 import { ContactLink } from "../components/ContactLink";
 import { PageHeroGradients } from "../components/PageHeroGradients";
 import logomarkImg from "../../imports/Immortal_Logomark_1C.png";
-import youthPhoto from "../../imports/_A7_2924.jpg";
+import youthHeroImg from "../../imports/dsc_9655_gym_full.png";
+import youthOverviewImg from "../../imports/_A7_2924.jpg";
 import { Shield, Users, Trophy, Heart, PoundSterling } from "lucide-react";
 
 export function YouthPage() {
@@ -11,10 +12,10 @@ export function YouthPage() {
       <section className="relative flex h-[40vh] items-center justify-center">
         <div className="absolute inset-0 overflow-hidden">
           <img
-            src={youthPhoto}
-            alt="Youth athlete training with coach"
-            width={1920}
-            height={2880}
+            src={youthHeroImg}
+            alt="Training floor at New Horizon CrossFit, Hatfield"
+            width={1024}
+            height={678}
             fetchPriority="high"
             decoding="async"
             className="h-full w-full object-cover"
@@ -62,7 +63,7 @@ export function YouthPage() {
               <div className="grid md:grid-cols-2 gap-8 items-stretch">
                 <div className="min-h-[18rem] md:min-h-0">
                   <img
-                    src={youthPhoto}
+                    src={youthOverviewImg}
                     alt="Coach Sai with young athlete"
                     width={1920}
                     height={2880}
